@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNews.MobileApp.Androi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNews.MobileApp.iOS", "HackerNews.MobileApp\HackerNews.MobileApp.iOS\HackerNews.MobileApp.iOS.csproj", "{5234636A-0803-4CD2-B64F-74EA1FAB46AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNews.MobileApp", "HackerNews.MobileApp\HackerNews.MobileApp\HackerNews.MobileApp.csproj", "{0691E556-4356-4253-9B92-452B470D2884}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNews.MobileApp", "HackerNews.MobileApp\HackerNews.MobileApp\HackerNews.MobileApp.csproj", "{0691E556-4356-4253-9B92-452B470D2884}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F3DDE875-DCFF-484F-8B48-3CA9EF85A2F7}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

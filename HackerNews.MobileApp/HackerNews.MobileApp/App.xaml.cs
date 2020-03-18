@@ -1,8 +1,6 @@
-﻿using Xamarin.Forms;
-
-namespace HackerNews.MobileApp
+﻿namespace HackerNews.MobileApp
 {
-    public partial class App : Application
+    public partial class App
     {
         public App()
         {
