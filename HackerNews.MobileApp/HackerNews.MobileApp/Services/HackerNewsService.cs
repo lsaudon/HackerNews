@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using HackerNews.MobileApp.Models;
 using Newtonsoft.Json;
 
 namespace HackerNews.MobileApp.Services
@@ -19,18 +21,31 @@ namespace HackerNews.MobileApp.Services
             return response;
         }
 
-        public async Task<Item> Item(int itemId)
+        public async Task<IItem> Item(ItemId itemId)
         {
             var httpClient = new HttpClient();
-            var url = $"{ItemUrl}{itemId}.json";
+            var url = $"{ItemUrl}{itemId.Value}.json";
             var responseString = await httpClient.GetStringAsync(url);
-            var response = JsonConvert.DeserializeObject<Item>(responseString);
-            return response;
+            var item = JsonConvert.DeserializeObject<HackerNewsItemType>(responseString);
+            switch (item.Type)
+            {
+                case ItemType.Job:
+                    return JsonConvert.DeserializeObject<Job>(responseString);
+                case ItemType.Story:
+                    return JsonConvert.DeserializeObject<Story>(responseString);
+                case ItemType.Comment:
+                    return JsonConvert.DeserializeObject<Comment>(responseString);
+                case ItemType.Poll:
+                    return JsonConvert.DeserializeObject<Poll>(responseString);
+                case ItemType.PollOpt:
+                    return JsonConvert.DeserializeObject<PollOpt>(responseString);
+                case ItemType.None:
+                    throw new ArgumentOutOfRangeException();
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
     }
 
-    public class Item
-    {
-        public int Id { get; set; }
-    }
+
 }
