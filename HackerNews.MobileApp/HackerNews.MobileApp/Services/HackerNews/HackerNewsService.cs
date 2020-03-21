@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using HackerNews.MobileApp.Models;
 using Newtonsoft.Json;
 
-namespace HackerNews.MobileApp.Services
+namespace HackerNews.MobileApp.Services.HackerNews
 {
     public class HackerNewsService : IHackerNewsService
     {
@@ -45,7 +45,14 @@ namespace HackerNews.MobileApp.Services
                     throw new ArgumentOutOfRangeException();
             }
         }
+        
+        public async Task<Story> Story(long id)
+        {
+            var httpClient = new HttpClient();
+            var url = $"{ItemUrl}{id}.json";
+            var responseString = await httpClient.GetStringAsync(url);
+            var item = JsonConvert.DeserializeObject<Story>(responseString);
+            return item;
+        }
     }
-
-
 }

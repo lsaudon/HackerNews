@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="HackerNews.MobileApp.Styles.Converters"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:converters="clr-namespace:HackerNews.MobileApp.Converters;assembly=HackerNews.MobileApp">
+    <converters:StringToUppercaseConverter x:Key="StringToUppercaseConverter" />
+    <converters:UnixTimeToDateTimeConverter x:Key="UnixTimeToDateTimeConverter" />
+    <converters:ItemTappedEventArgsConverter x:Key="ItemTappedEventArgsConverter" />
+</ResourceDictionary>

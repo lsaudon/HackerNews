@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HackerNews.MobileApp.Pages.StoryDetail.StoryView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mobileApp="clr-namespace:HackerNews.MobileApp;assembly=HackerNews.MobileApp"
+    xmlns:storyDetail="clr-namespace:HackerNews.MobileApp.Pages.StoryDetail;assembly=HackerNews.MobileApp"
+    mobileApp:ViewModelLocator.AutoWireViewModel="true"
+    x:DataType="storyDetail:StoryViewModel">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                HorizontalOptions="CenterAndExpand"
+                Text="{Binding Story.Title}"
+                VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

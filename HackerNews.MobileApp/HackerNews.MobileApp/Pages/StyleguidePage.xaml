@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HackerNews.MobileApp.Pages.StyleguidePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ScrollView>
+        <StackLayout>
+            <StackLayout Padding="10" BackgroundColor="{StaticResource Dark}">
+                <Label Style="{StaticResource DarkH1}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+                <Label Style="{StaticResource DarkH2}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+                <Label Style="{StaticResource DarkH3}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+                <Label Style="{StaticResource DarkH4}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+                <Label Style="{StaticResource DarkH5}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+                <Label Style="{StaticResource DarkP}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+                <Label Style="{StaticResource DarkH6}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+            </StackLayout>
+            <StackLayout Padding="10" BackgroundColor="{StaticResource White}">
+                <Label Style="{StaticResource LightH1}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+                <Label Style="{StaticResource LightH2}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+                <Label Style="{StaticResource LightH3}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+                <Label Style="{StaticResource LightH4}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+                <Label Style="{StaticResource LightH5}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+                <Label Style="{StaticResource LightP}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+                <Label Style="{StaticResource LightH6}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+            </StackLayout>
+            <StackLayout Padding="10" BackgroundColor="{StaticResource GreyA}">
+                <Label Style="{StaticResource ArticleCategory}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+                <Label Style="{StaticResource ArticleContent}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+                <Label Style="{StaticResource ArticleDate}" Text="Lorem Ipsum Dolor Sit Amet Consectetur" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

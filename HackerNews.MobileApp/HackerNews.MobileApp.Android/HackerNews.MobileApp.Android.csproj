@@ -59,6 +59,34 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\Fonts\Zilla_Slab\ZillaSlab-Bold.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Zilla_Slab\ZillaSlab-BoldItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Zilla_Slab\ZillaSlab-Italic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Zilla_Slab\ZillaSlab-Light.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Zilla_Slab\ZillaSlab-LightItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Zilla_Slab\ZillaSlab-Medium.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Zilla_Slab\ZillaSlab-MediumItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Zilla_Slab\ZillaSlab-Regular.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Zilla_Slab\ZillaSlab-SemiBold.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Zilla_Slab\ZillaSlab-SemiBoldItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-Black.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-BlackItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-Bold.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-BoldItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-ExtraBold.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-ExtraLight.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-Italic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-Light.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-LightItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-Medium.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-MediumItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-Regular.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-SemiBold.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-Thin.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Montserrat\Montserrat-ThinItalic.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -97,6 +125,12 @@
     <AndroidResource Include="Resources\drawable\splash_screen.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Fonts\Zilla_Slab\OFL.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Fonts\Montserrat\OFL.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using HackerNews.MobileApp.Models;
-using HackerNews.MobileApp.Services;
+using HackerNews.MobileApp.Services.HackerNews;
 using Xunit;
 using NFluent;
 
@@ -20,19 +20,15 @@ namespace HackerNews.MobileApp.Tests.Services
         public async Task WhenItem8863ThenStory()
         {
             var hackerNewsService = new HackerNewsService();
-            var item = await hackerNewsService.Item(new ItemId { Value = 8863 });
-            Check.That(item).IsInstanceOf<Story>();
-            if (item is Story story)
-            {
-                Check.That(story.Id).IsEqualTo(8863);
-            }
+            var story = await hackerNewsService.Story(8863);
+            Check.That(story.Id).IsEqualTo(8863);
         }
 
         [Fact]
         public async Task WhenItem192327ThenJob()
         {
             var hackerNewsService = new HackerNewsService();
-            var item = await hackerNewsService.Item(new ItemId { Value = 192327 });
+            var item = await hackerNewsService.Item(new ItemId(192327));
             Check.That(item).IsInstanceOf<Job>();
             if (item is Job job)
             {
@@ -44,7 +40,7 @@ namespace HackerNews.MobileApp.Tests.Services
         public async Task WhenItem2921983ThenComment()
         {
             var hackerNewsService = new HackerNewsService();
-            var item = await hackerNewsService.Item(new ItemId { Value = 2921983 });
+            var item = await hackerNewsService.Item(new ItemId(2921983));
             Check.That(item).IsInstanceOf<Comment>();
             if (item is Comment comment)
             {
@@ -56,7 +52,7 @@ namespace HackerNews.MobileApp.Tests.Services
         public async Task WhenItem126809ThenPoll()
         {
             var hackerNewsService = new HackerNewsService();
-            var item = await hackerNewsService.Item(new ItemId { Value = 126809 });
+            var item = await hackerNewsService.Item(new ItemId(126809));
             Check.That(item).IsInstanceOf<Poll>();
             if (item is Poll poll)
             {
@@ -68,8 +64,7 @@ namespace HackerNews.MobileApp.Tests.Services
         public async Task WhenItem160705ThenPollOpt()
         {
             var hackerNewsService = new HackerNewsService();
-            var item = await hackerNewsService.Item(new ItemId { Value = 160705 });
-            Check.That(item).IsInstanceOf<PollOpt>();
+            var item = await hackerNewsService.Item(new ItemId(160705));
             if (item is PollOpt pollOpt)
             {
                 Check.That(pollOpt.Id).IsEqualTo(160705);
