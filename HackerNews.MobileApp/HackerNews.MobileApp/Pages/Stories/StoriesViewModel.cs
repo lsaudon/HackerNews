@@ -52,7 +52,7 @@ namespace HackerNews.MobileApp.Pages.Stories
                 var ids = await HackerNewsService.BestStories();
 
                 var stories = new List<Story>();
-                var numberStories = 6;
+                var numberStories = 10;
                 foreach (var id in ids.Take(numberStories))
                 {
                     var story = await HackerNewsService.Story(id);
