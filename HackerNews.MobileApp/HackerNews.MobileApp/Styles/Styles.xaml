@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <ResourceDictionary
     x:Class="HackerNews.MobileApp.Styles.Styles"
     xmlns="http://xamarin.com/schemas/2014/forms"
@@ -23,5 +24,13 @@
         <Setter Property="FontFamily" Value="{StaticResource MontserratBold}" />
         <Setter Property="FontSize" Value="20" />
         <Setter Property="TextColor" Value="{StaticResource Primary}" />
+    </Style>
+
+    <Style TargetType="Button">
+        <Setter Property="FontFamily" Value="{StaticResource MontserratBold}" />
+        <Setter Property="FontSize" Value="10" />
+        <Setter Property="TextColor" Value="{StaticResource White}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource Secondary}" />
+        <Setter Property="CornerRadius" Value="27" />
     </Style>
 </ResourceDictionary>

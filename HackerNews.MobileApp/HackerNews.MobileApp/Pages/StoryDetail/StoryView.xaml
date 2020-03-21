@@ -1,18 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <ContentPage
     x:Class="HackerNews.MobileApp.Pages.StoryDetail.StoryView"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:mobileApp="clr-namespace:HackerNews.MobileApp;assembly=HackerNews.MobileApp"
     xmlns:storyDetail="clr-namespace:HackerNews.MobileApp.Pages.StoryDetail;assembly=HackerNews.MobileApp"
+    Title="{Binding Title}"
     mobileApp:ViewModelLocator.AutoWireViewModel="true"
-    x:DataType="storyDetail:StoryViewModel">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label
-                HorizontalOptions="CenterAndExpand"
-                Text="{Binding Story.Title}"
-                VerticalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    x:DataType="storyDetail:StoryViewModel"
+    BackgroundColor="{StaticResource GreyA}">
+    <StackLayout>
+        <ActivityIndicator
+            HorizontalOptions="CenterAndExpand"
+            IsRunning="{Binding IsBusy}"
+            IsVisible="{Binding IsBusy}"
+            VerticalOptions="CenterAndExpand" />
+        <Grid
+            Padding="30"
+            HorizontalOptions="FillAndExpand"
+            IsVisible="{Binding IsNotBusy}"
+            VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+                <RowDefinition Height="55" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0">
+                <Label Style="{StaticResource ArticleCategory}" Text="{Binding Story.Type, Converter={StaticResource StringToUppercaseConverter}}" />
+                <Label
+                    LineBreakMode="TailTruncation"
+                    Style="{StaticResource DarkH3}"
+                    Text="{Binding Story.Title}" />
+                <Label Style="{StaticResource ArticleDate}" Text="{Binding Story.Time, Converter={StaticResource UnixTimeToDateTimeConverter}, StringFormat='{0:dd MMMM yyyy}'}" />
+                <Label Style="{StaticResource DarkP}" Text="{Binding Story.By}" />
+            </StackLayout>
+            <Button
+                Grid.Row="2"
+                Command="{Binding GoToUrlCommand}"
+                CommandParameter="{Binding Story.Url}"
+                IsVisible="{Binding Story.Url, Converter={StaticResource VisibilityConverter}}"
+                Text="READ ARTICLE" />
+        </Grid>
+    </StackLayout>
 </ContentPage>

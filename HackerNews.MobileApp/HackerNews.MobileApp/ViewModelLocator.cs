@@ -5,6 +5,7 @@ using Autofac;
 using HackerNews.MobileApp.Pages.Base;
 using HackerNews.MobileApp.Pages.Stories;
 using HackerNews.MobileApp.Pages.StoryDetail;
+using HackerNews.MobileApp.Services.Browser;
 using HackerNews.MobileApp.Services.HackerNews;
 using HackerNews.MobileApp.Services.Navigation;
 using Xamarin.Forms;
@@ -17,12 +18,15 @@ namespace HackerNews.MobileApp
 
         private static readonly Dictionary<Type, Type> LinkedViewAndViewModel = new Dictionary<Type, Type>();
 
-        public static readonly BindableProperty AutoWireViewModelProperty = BindableProperty.CreateAttached("AutoWireViewModel", typeof(bool), typeof(ViewModelLocator), default(bool), propertyChanged: OnAutoWireViewModelChanged);
+        public static readonly BindableProperty AutoWireViewModelProperty =
+            BindableProperty.CreateAttached("AutoWireViewModel", typeof(bool), typeof(ViewModelLocator), default(bool),
+                propertyChanged: OnAutoWireViewModelChanged);
 
         public static bool GetAutoWireViewModel(BindableObject bindableObject) =>
             (bool)bindableObject.GetValue(AutoWireViewModelProperty);
 
-        public static void SetAutoWireViewModel(BindableObject bindableObject, bool value) => bindableObject.SetValue(AutoWireViewModelProperty, value);
+        public static void SetAutoWireViewModel(BindableObject bindableObject, bool value) =>
+            bindableObject.SetValue(AutoWireViewModelProperty, value);
 
         public static void RegisterDependencies(bool useMockSerivces)
         {
@@ -34,6 +38,7 @@ namespace HackerNews.MobileApp
 
             //Services
             builder.RegisterType<NavigationService>().As<INavigationService>().SingleInstance();
+            builder.RegisterType<BrowserService>().As<IBrowserService>();
 
             if (useMockSerivces)
             {

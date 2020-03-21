@@ -7,10 +7,10 @@ using Android.Views;
 namespace HackerNews.MobileApp.Droid
 {
     [Activity(Label = "HackerNews.MobileApp",
-        Icon = "@mipmap/icon", 
-        RoundIcon ="@mipmap/icon_round" ,
-        Theme = "@style/MainTheme.Splash", 
-        MainLauncher = true, 
+        Icon = "@mipmap/icon",
+        RoundIcon = "@mipmap/icon_round",
+        Theme = "@style/MainTheme.Splash",
+        MainLauncher = true,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
@@ -28,7 +28,9 @@ namespace HackerNews.MobileApp.Droid
             Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions,
+            [GeneratedEnum] Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 

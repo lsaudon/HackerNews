@@ -35,6 +35,7 @@ namespace HackerNews.MobileApp.Pages.Stories
         public ObservableRangeCollection<Story> Items { get; set; } = new ObservableRangeCollection<Story>();
 
         public ICommand LoadStoriesCommand { get; }
+
         private async Task LoadStoriesExecute()
         {
             if (IsBusy)

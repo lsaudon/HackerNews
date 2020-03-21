@@ -21,7 +21,8 @@ namespace HackerNews.MobileApp.Behaviors.Base
             bindable.BindingContextChanged += OnBindingContextChanged;
         }
 
-        protected override void OnDetachingFrom(T bindable) => bindable.BindingContextChanged -= OnBindingContextChanged;
+        protected override void OnDetachingFrom(T bindable) =>
+            bindable.BindingContextChanged -= OnBindingContextChanged;
 
         protected override void OnBindingContextChanged()
         {

@@ -14,22 +14,26 @@ namespace HackerNews.MobileApp.Services.Navigation
             {
                 var mainPage = Application.Current.MainPage as CustomNavigationView;
 
-                var viewModel = mainPage?.Navigation.NavigationStack[mainPage.Navigation.NavigationStack.Count - 2].BindingContext;
+                var viewModel = mainPage?.Navigation.NavigationStack[mainPage.Navigation.NavigationStack.Count - 2]
+                    .BindingContext;
                 return viewModel as ViewModelBase;
             }
         }
 
         public Task InitializeAsync() => NavigateToAsync<StoriesViewModel>();
 
-        public Task NavigateToAsync<TViewModel>() where TViewModel : ViewModelBase => InternalNavigateToAsync(typeof(TViewModel));
+        public Task NavigateToAsync<TViewModel>() where TViewModel : ViewModelBase =>
+            InternalNavigateToAsync(typeof(TViewModel));
 
-        public Task NavigateToAsync<TViewModel>(object parameter) where TViewModel : ViewModelBase => InternalNavigateToAsync(typeof(TViewModel), parameter);
+        public Task NavigateToAsync<TViewModel>(object parameter) where TViewModel : ViewModelBase =>
+            InternalNavigateToAsync(typeof(TViewModel), parameter);
 
         public Task RemoveBackStackAsync()
         {
             var mainPage = Application.Current.MainPage as CustomNavigationView;
 
-            mainPage?.Navigation.RemovePage(mainPage.Navigation.NavigationStack[mainPage.Navigation.NavigationStack.Count - 2]);
+            mainPage?.Navigation.RemovePage(
+                mainPage.Navigation.NavigationStack[mainPage.Navigation.NavigationStack.Count - 2]);
 
             return Task.FromResult(true);
         }

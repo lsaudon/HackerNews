@@ -45,7 +45,7 @@ namespace HackerNews.MobileApp.Services.HackerNews
                     throw new ArgumentOutOfRangeException();
             }
         }
-        
+
         public async Task<Story> Story(long id)
         {
             var httpClient = new HttpClient();
