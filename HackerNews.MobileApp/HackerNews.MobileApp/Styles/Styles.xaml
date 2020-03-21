@@ -18,4 +18,10 @@
         <Setter Property="FontSize" Value="17" />
         <Setter Property="TextColor" Value="{StaticResource GreyC}" />
     </Style>
+
+    <Style x:Key="ArticleScore" TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource MontserratBold}" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="TextColor" Value="{StaticResource Primary}" />
+    </Style>
 </ResourceDictionary>
