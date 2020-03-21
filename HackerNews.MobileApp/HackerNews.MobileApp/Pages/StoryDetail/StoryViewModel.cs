@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using HackerNews.MobileApp.Models;
 using HackerNews.MobileApp.Pages.Base;
 using HackerNews.MobileApp.Services.Browser;
 using HackerNews.MobileApp.Services.HackerNews;
+using MvvmHelpers;
 using MvvmHelpers.Commands;
 using Xamarin.Forms;
 
@@ -41,6 +44,8 @@ namespace HackerNews.MobileApp.Pages.StoryDetail
             set => SetProperty(ref story, value);
         }
 
+        public ObservableRangeCollection<Comment> Comments { get; set; } = new ObservableRangeCollection<Comment>();
+
         public ICommand LoadStoryCommand { get; }
 
         private async Task LoadStoryExecute(long storyId)
@@ -51,6 +56,19 @@ namespace HackerNews.MobileApp.Pages.StoryDetail
             {
                 IsBusy = true;
                 Story = await HackerNewsService.Story(storyId);
+
+                var numberStories = 10;
+                var comments = new List<Comment>();
+                foreach (var kidId in Story.Kids.Take(numberStories))
+                {
+                    var comment = await HackerNewsService.Comment(kidId);
+                    comments.Add(comment);
+                }
+
+                if (Comments.Count > 0)
+                    Comments.ReplaceRange(comments);
+                else
+                    Comments.AddRange(comments);
             }
             catch (Exception ex)
             {

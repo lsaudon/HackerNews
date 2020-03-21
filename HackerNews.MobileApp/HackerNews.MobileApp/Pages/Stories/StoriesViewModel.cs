@@ -32,7 +32,13 @@ namespace HackerNews.MobileApp.Pages.Stories
             return base.InitializeAsync(navigationData);
         }
 
-        public ObservableRangeCollection<Story> Items { get; set; } = new ObservableRangeCollection<Story>();
+        public ObservableRangeCollection<Story> Stories { get; set; } = new ObservableRangeCollection<Story>();
+
+        private bool isRefreshing;
+        public bool IsRefreshing { 
+            get => isRefreshing;
+            set => SetProperty(ref isRefreshing, value);
+        }
 
         public ICommand LoadStoriesCommand { get; }
 
@@ -43,20 +49,20 @@ namespace HackerNews.MobileApp.Pages.Stories
             try
             {
                 IsBusy = true;
+                var ids = await HackerNewsService.BestStories();
 
-                var ids = await HackerNewsService.NewStories();
-
-                var items = new List<Story>();
-                foreach (var id in ids.Take(10))
+                var stories = new List<Story>();
+                var numberStories = 6;
+                foreach (var id in ids.Take(numberStories))
                 {
-                    var item = await HackerNewsService.Story(id);
-                    items.Add(item);
+                    var story = await HackerNewsService.Story(id);
+                    stories.Add(story);
                 }
 
-                if (Items.Count > 0)
-                    Items.ReplaceRange(items);
+                if (Stories.Count > 0)
+                    Stories.ReplaceRange(stories);
                 else
-                    Items.AddRange(items);
+                    Stories.AddRange(stories);
             }
             catch (Exception ex)
             {
@@ -68,6 +74,7 @@ namespace HackerNews.MobileApp.Pages.Stories
             finally
             {
                 IsBusy = false;
+                IsRefreshing = false;
             }
         }
 

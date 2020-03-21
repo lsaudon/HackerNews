@@ -11,15 +11,31 @@ namespace HackerNews.MobileApp.Tests.Services
         [Fact]
         public async Task WhenNewStoriesThen500Stories()
         {
-            var hackerNewsService = new HackerNewsService();
+            IHackerNewsService hackerNewsService = new HackerNewsService();
             var newStories = await hackerNewsService.NewStories();
             Check.That(newStories.Count).IsEqualTo(500);
         }
 
         [Fact]
+        public async Task WhenTopStoriesThen346Stories()
+        {
+            IHackerNewsService hackerNewsService = new HackerNewsService();
+            var topStories = await hackerNewsService.TopStories();
+            Check.That(topStories.Count).IsEqualTo(346);
+        }
+
+        [Fact]
+        public async Task WhenBestStoriesThen200Stories()
+        {
+            IHackerNewsService hackerNewsService = new HackerNewsService();
+            var bestStories = await hackerNewsService.BestStories();
+            Check.That(bestStories.Count).IsEqualTo(200);
+        }
+
+        [Fact]
         public async Task WhenItem8863ThenStory()
         {
-            var hackerNewsService = new HackerNewsService();
+            IHackerNewsService hackerNewsService = new HackerNewsService();
             var story = await hackerNewsService.Story(8863);
             Check.That(story.Id).IsEqualTo(8863);
         }
@@ -27,7 +43,7 @@ namespace HackerNews.MobileApp.Tests.Services
         [Fact]
         public async Task WhenItem192327ThenJob()
         {
-            var hackerNewsService = new HackerNewsService();
+            IHackerNewsService hackerNewsService = new HackerNewsService();
             var item = await hackerNewsService.Item(new ItemId(192327));
             Check.That(item).IsInstanceOf<Job>();
             if (item is Job job)
@@ -39,7 +55,7 @@ namespace HackerNews.MobileApp.Tests.Services
         [Fact]
         public async Task WhenItem2921983ThenComment()
         {
-            var hackerNewsService = new HackerNewsService();
+            IHackerNewsService hackerNewsService = new HackerNewsService();
             var item = await hackerNewsService.Item(new ItemId(2921983));
             Check.That(item).IsInstanceOf<Comment>();
             if (item is Comment comment)
@@ -51,7 +67,7 @@ namespace HackerNews.MobileApp.Tests.Services
         [Fact]
         public async Task WhenItem126809ThenPoll()
         {
-            var hackerNewsService = new HackerNewsService();
+            IHackerNewsService hackerNewsService = new HackerNewsService();
             var item = await hackerNewsService.Item(new ItemId(126809));
             Check.That(item).IsInstanceOf<Poll>();
             if (item is Poll poll)
@@ -63,7 +79,7 @@ namespace HackerNews.MobileApp.Tests.Services
         [Fact]
         public async Task WhenItem160705ThenPollOpt()
         {
-            var hackerNewsService = new HackerNewsService();
+            IHackerNewsService hackerNewsService = new HackerNewsService();
             var item = await hackerNewsService.Item(new ItemId(160705));
             if (item is PollOpt pollOpt)
             {

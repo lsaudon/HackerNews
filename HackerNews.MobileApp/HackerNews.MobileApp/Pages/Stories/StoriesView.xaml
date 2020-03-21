@@ -13,16 +13,14 @@
     x:DataType="stories:StoriesViewModel"
     BackgroundColor="{StaticResource GreyA}">
     <StackLayout>
-        <ActivityIndicator
-            HorizontalOptions="CenterAndExpand"
-            IsRunning="{Binding IsBusy}"
-            IsVisible="{Binding IsBusy}"
-            VerticalOptions="CenterAndExpand" />
         <ListView
             BackgroundColor="{StaticResource GreyA}"
             HasUnevenRows="true"
-            IsVisible="{Binding IsNotBusy}"
-            ItemsSource="{Binding Items}">
+            IsPullToRefreshEnabled="True"
+            IsRefreshing="{Binding IsRefreshing}"
+            ItemsSource="{Binding Stories}"
+            RefreshCommand="{Binding LoadStoriesCommand}"
+            SelectionMode="None">
             <ListView.Behaviors>
                 <behaviors:EventToCommandBehavior
                     Command="{Binding GoToStoryCommand}"

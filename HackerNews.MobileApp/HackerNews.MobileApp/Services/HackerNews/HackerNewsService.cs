@@ -10,13 +10,31 @@ namespace HackerNews.MobileApp.Services.HackerNews
     public class HackerNewsService : IHackerNewsService
     {
         private const string HackerNewsUrl = "https://hacker-news.firebaseio.com/v0/";
-        private const string TopStoriesUrl = HackerNewsUrl + "newstories.json";
+        private const string TopStoriesUrl = HackerNewsUrl + "topstories.json";
+        private const string NewStoriesUrl = HackerNewsUrl + "newstories.json";
+        private const string BestStoriesUrl = HackerNewsUrl + "beststories.json";
         private const string ItemUrl = HackerNewsUrl + "item/";
 
         public async Task<IList<int>> NewStories()
         {
             var httpClient = new HttpClient();
+            var responseString = await httpClient.GetStringAsync(NewStoriesUrl);
+            var response = JsonConvert.DeserializeObject<IList<int>>(responseString);
+            return response;
+        }
+
+        public async Task<IList<int>> TopStories()
+        {
+            var httpClient = new HttpClient();
             var responseString = await httpClient.GetStringAsync(TopStoriesUrl);
+            var response = JsonConvert.DeserializeObject<IList<int>>(responseString);
+            return response;
+        }
+
+        public async Task<IList<int>> BestStories()
+        {
+            var httpClient = new HttpClient();
+            var responseString = await httpClient.GetStringAsync(BestStoriesUrl);
             var response = JsonConvert.DeserializeObject<IList<int>>(responseString);
             return response;
         }
@@ -44,6 +62,15 @@ namespace HackerNews.MobileApp.Services.HackerNews
                 default:
                     throw new ArgumentOutOfRangeException();
             }
+        }
+
+        public async Task<Comment> Comment(long id)
+        {
+            var httpClient = new HttpClient();
+            var url = $"{ItemUrl}{id}.json";
+            var responseString = await httpClient.GetStringAsync(url);
+            var item = JsonConvert.DeserializeObject<Comment>(responseString);
+            return item;
         }
 
         public async Task<Story> Story(long id)
