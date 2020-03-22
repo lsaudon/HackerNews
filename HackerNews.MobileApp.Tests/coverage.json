@@ -1,0 +1,3378 @@
+{
+  "HackerNews.MobileApp.dll": {
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\App.xaml.cs": {
+      "HackerNews.MobileApp.App": {
+        "System.Void HackerNews.MobileApp.App::OnSleep()": {
+          "Lines": {
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.App::OnResume()": {
+          "Lines": {
+            "26": 0,
+            "27": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.App::InitializeApp()": {
+          "Lines": {
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        },
+        "System.Threading.Tasks.Task HackerNews.MobileApp.App::InitializeNavigation()": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.App::.ctor()": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "12": 0,
+            "13": 0
+          },
+          "Branches": []
+        }
+      },
+      "HackerNews.MobileApp.App/<OnStart>d__1": {
+        "System.Void HackerNews.MobileApp.App/<OnStart>d__1::MoveNext()": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": [
+            {
+              "Line": 18,
+              "Offset": 51,
+              "EndOffset": 53,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 18,
+              "Offset": 51,
+              "EndOffset": 117,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\obj\\Debug\\netstandard2.0\\App.xaml.g.cs": {
+      "HackerNews.MobileApp.App": {
+        "System.Void HackerNews.MobileApp.App::InitializeComponent()": {
+          "Lines": {
+            "20": 0,
+            "21": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 158,
+              "EndOffset": 160,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 158,
+              "EndOffset": 166,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\ViewModelLocator.cs": {
+      "HackerNews.MobileApp.ViewModelLocator": {
+        "System.Boolean HackerNews.MobileApp.ViewModelLocator::GetAutoWireViewModel(Xamarin.Forms.BindableObject)": {
+          "Lines": {
+            "26": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.ViewModelLocator::SetAutoWireViewModel(Xamarin.Forms.BindableObject,System.Boolean)": {
+          "Lines": {
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.ViewModelLocator::RegisterDependencies(System.Boolean)": {
+          "Lines": {
+            "32": 0,
+            "33": 0,
+            "36": 0,
+            "37": 0,
+            "40": 0,
+            "41": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0
+          },
+          "Branches": [
+            {
+              "Line": 43,
+              "Offset": 53,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 43,
+              "Offset": 53,
+              "EndOffset": 71,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 91,
+              "EndOffset": 93,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 91,
+              "EndOffset": 96,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void HackerNews.MobileApp.ViewModelLocator::AddLinkViewAndViewModel(Autofac.ContainerBuilder)": {
+          "Lines": {
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0
+          },
+          "Branches": []
+        },
+        "System.Type HackerNews.MobileApp.ViewModelLocator::FindViewByViewModel(System.Type)": {
+          "Lines": {
+            "65": 0,
+            "66": 0,
+            "67": 0
+          },
+          "Branches": []
+        },
+        "T HackerNews.MobileApp.ViewModelLocator::Resolve()": {
+          "Lines": {
+            "70": 0,
+            "71": 0,
+            "72": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.ViewModelLocator::OnAutoWireViewModelChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)": {
+          "Lines": {
+            "75": 0,
+            "76": 0,
+            "78": 0,
+            "80": 0,
+            "82": 0,
+            "84": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0
+          },
+          "Branches": [
+            {
+              "Line": 78,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 78,
+              "Offset": 9,
+              "EndOffset": 14,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 80,
+              "Offset": 32,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 84,
+              "Offset": 59,
+              "EndOffset": 63,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 80,
+              "Offset": 32,
+              "EndOffset": 83,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 84,
+              "Offset": 59,
+              "EndOffset": 83,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void HackerNews.MobileApp.ViewModelLocator::.cctor()": {
+          "Lines": {
+            "19": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\obj\\Debug\\netstandard2.0\\Styles\\ThemeDark.xaml.g.cs": {
+      "HackerNews.MobileApp.Styles.Colors": {
+        "System.Void HackerNews.MobileApp.Styles.Colors::InitializeComponent()": {
+          "Lines": {
+            "20": 0,
+            "21": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Styles\\Colors.xaml.cs": {
+      "HackerNews.MobileApp.Styles.Colors": {
+        "System.Void HackerNews.MobileApp.Styles.Colors::.ctor()": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\obj\\Debug\\netstandard2.0\\Styles\\Converters.xaml.g.cs": {
+      "HackerNews.MobileApp.Styles.Converters": {
+        "System.Void HackerNews.MobileApp.Styles.Converters::InitializeComponent()": {
+          "Lines": {
+            "20": 0,
+            "21": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Styles\\Converters.xaml.cs": {
+      "HackerNews.MobileApp.Styles.Converters": {
+        "System.Void HackerNews.MobileApp.Styles.Converters::.ctor()": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\obj\\Debug\\netstandard2.0\\Styles\\Fonts.xaml.g.cs": {
+      "HackerNews.MobileApp.Styles.Fonts": {
+        "System.Void HackerNews.MobileApp.Styles.Fonts::InitializeComponent()": {
+          "Lines": {
+            "20": 0,
+            "21": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Styles\\Fonts.xaml.cs": {
+      "HackerNews.MobileApp.Styles.Fonts": {
+        "System.Void HackerNews.MobileApp.Styles.Fonts::.ctor()": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\obj\\Debug\\netstandard2.0\\Styles\\Styles.xaml.g.cs": {
+      "HackerNews.MobileApp.Styles.Styles": {
+        "System.Void HackerNews.MobileApp.Styles.Styles::InitializeComponent()": {
+          "Lines": {
+            "20": 0,
+            "21": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Styles\\Styles.xaml.cs": {
+      "HackerNews.MobileApp.Styles.Styles": {
+        "System.Void HackerNews.MobileApp.Styles.Styles::.ctor()": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\obj\\Debug\\netstandard2.0\\Styles\\Colors.xaml.g.cs": {
+      "HackerNews.MobileApp.Styles.ThemeDark": {
+        "System.Void HackerNews.MobileApp.Styles.ThemeDark::InitializeComponent()": {
+          "Lines": {
+            "20": 0,
+            "21": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Styles\\ThemeDark.xaml.cs": {
+      "HackerNews.MobileApp.Styles.ThemeDark": {
+        "System.Void HackerNews.MobileApp.Styles.ThemeDark::.ctor()": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\obj\\Debug\\netstandard2.0\\Styles\\ThemeLight.xaml.g.cs": {
+      "HackerNews.MobileApp.Styles.ThemeLight": {
+        "System.Void HackerNews.MobileApp.Styles.ThemeLight::InitializeComponent()": {
+          "Lines": {
+            "20": 0,
+            "21": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Styles\\ThemeLight.xaml.cs": {
+      "HackerNews.MobileApp.Styles.ThemeLight": {
+        "System.Void HackerNews.MobileApp.Styles.ThemeLight::.ctor()": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Services\\Navigation\\NavigationService.cs": {
+      "HackerNews.MobileApp.Services.Navigation.NavigationService": {
+        "HackerNews.MobileApp.Pages.Base.ViewModelBase HackerNews.MobileApp.Services.Navigation.NavigationService::get_PreviousPageViewModel()": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": [
+            {
+              "Line": 17,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 18,
+              "EndOffset": 23,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Threading.Tasks.Task HackerNews.MobileApp.Services.Navigation.NavigationService::InitializeAsync()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.Threading.Tasks.Task HackerNews.MobileApp.Services.Navigation.NavigationService::NavigateToAsync()": {
+          "Lines": {
+            "26": 0
+          },
+          "Branches": []
+        },
+        "System.Threading.Tasks.Task HackerNews.MobileApp.Services.Navigation.NavigationService::NavigateToAsync(System.Object)": {
+          "Lines": {
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.Threading.Tasks.Task HackerNews.MobileApp.Services.Navigation.NavigationService::RemoveBackStackAsync()": {
+          "Lines": {
+            "32": 0,
+            "33": 0,
+            "35": 0,
+            "36": 0,
+            "38": 0,
+            "39": 0
+          },
+          "Branches": [
+            {
+              "Line": 35,
+              "Offset": 18,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 18,
+              "EndOffset": 68,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Threading.Tasks.Task HackerNews.MobileApp.Services.Navigation.NavigationService::RemoveLastFromBackStackAsync()": {
+          "Lines": {
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "52": 0,
+            "53": 0
+          },
+          "Branches": [
+            {
+              "Line": 43,
+              "Offset": 23,
+              "EndOffset": 25,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 45,
+              "Offset": 92,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 45,
+              "Offset": 92,
+              "EndOffset": 94,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 43,
+              "Offset": 23,
+              "EndOffset": 95,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "Xamarin.Forms.Page HackerNews.MobileApp.Services.Navigation.NavigationService::CreatePage(System.Type)": {
+          "Lines": {
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "78": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0
+          },
+          "Branches": [
+            {
+              "Line": 73,
+              "Offset": 10,
+              "EndOffset": 12,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 73,
+              "Offset": 10,
+              "EndOffset": 24,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 80,
+              "Offset": 41,
+              "EndOffset": 43,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 80,
+              "Offset": 41,
+              "EndOffset": 61,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Type HackerNews.MobileApp.Services.Navigation.NavigationService::GetPageTypeForViewModel(System.Type)": {
+          "Lines": {
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0
+          },
+          "Branches": [
+            {
+              "Line": 91,
+              "Offset": 10,
+              "EndOffset": 12,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 91,
+              "Offset": 10,
+              "EndOffset": 24,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "HackerNews.MobileApp.Services.Navigation.NavigationService/<InternalNavigateToAsync>d__7": {
+        "System.Void HackerNews.MobileApp.Services.Navigation.NavigationService/<InternalNavigateToAsync>d__7::MoveNext()": {
+          "Lines": {
+            "56": 0,
+            "57": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "68": 0,
+            "69": 0
+          },
+          "Branches": [
+            {
+              "Line": 56,
+              "Offset": 14,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 86,
+              "EndOffset": 88,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 61,
+              "Offset": 119,
+              "EndOffset": 121,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 61,
+              "Offset": 119,
+              "EndOffset": 189,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 86,
+              "EndOffset": 200,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 265,
+              "EndOffset": 267,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 56,
+              "Offset": 14,
+              "EndOffset": 305,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 265,
+              "EndOffset": 334,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Services\\HackerNews\\HackerNewsService.cs": {
+      "HackerNews.MobileApp.Services.HackerNews.HackerNewsService/<NewStories>d__5": {
+        "System.Void HackerNews.MobileApp.Services.HackerNews.HackerNewsService/<NewStories>d__5::MoveNext()": {
+          "Lines": {
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 55,
+              "EndOffset": 57,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 21,
+              "Offset": 55,
+              "EndOffset": 124,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "HackerNews.MobileApp.Services.HackerNews.HackerNewsService/<TopStories>d__6": {
+        "System.Void HackerNews.MobileApp.Services.HackerNews.HackerNewsService/<TopStories>d__6::MoveNext()": {
+          "Lines": {
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "31": 1,
+            "32": 1
+          },
+          "Branches": [
+            {
+              "Line": 29,
+              "Offset": 55,
+              "EndOffset": 57,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 29,
+              "Offset": 55,
+              "EndOffset": 124,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "HackerNews.MobileApp.Services.HackerNews.HackerNewsService/<BestStories>d__7": {
+        "System.Void HackerNews.MobileApp.Services.HackerNews.HackerNewsService/<BestStories>d__7::MoveNext()": {
+          "Lines": {
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1
+          },
+          "Branches": [
+            {
+              "Line": 37,
+              "Offset": 55,
+              "EndOffset": 57,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 37,
+              "Offset": 55,
+              "EndOffset": 124,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "HackerNews.MobileApp.Services.HackerNews.HackerNewsService/<Item>d__8": {
+        "System.Void HackerNews.MobileApp.Services.HackerNews.HackerNewsService/<Item>d__8::MoveNext()": {
+          "Lines": {
+            "43": 4,
+            "44": 4,
+            "45": 4,
+            "46": 4,
+            "47": 4,
+            "48": 4,
+            "51": 1,
+            "53": 0,
+            "55": 1,
+            "57": 1,
+            "59": 1,
+            "61": 0,
+            "63": 0,
+            "65": 4
+          },
+          "Branches": [
+            {
+              "Line": 46,
+              "Offset": 93,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 46,
+              "Offset": 93,
+              "EndOffset": 162,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 48,
+              "Offset": 242,
+              "EndOffset": 273,
+              "Path": 2,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 48,
+              "Offset": 242,
+              "EndOffset": 287,
+              "Path": 3,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 48,
+              "Offset": 242,
+              "EndOffset": 301,
+              "Path": 4,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 48,
+              "Offset": 242,
+              "EndOffset": 315,
+              "Path": 5,
+              "Ordinal": 7,
+              "Hits": 1
+            },
+            {
+              "Line": 48,
+              "Offset": 242,
+              "EndOffset": 329,
+              "Path": 6,
+              "Ordinal": 8,
+              "Hits": 1
+            },
+            {
+              "Line": 48,
+              "Offset": 242,
+              "EndOffset": 343,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 48,
+              "Offset": 242,
+              "EndOffset": 349,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "HackerNews.MobileApp.Services.HackerNews.HackerNewsService/<Comment>d__9": {
+        "System.Void HackerNews.MobileApp.Services.HackerNews.HackerNewsService/<Comment>d__9::MoveNext()": {
+          "Lines": {
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0
+          },
+          "Branches": [
+            {
+              "Line": 71,
+              "Offset": 88,
+              "EndOffset": 90,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 71,
+              "Offset": 88,
+              "EndOffset": 157,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "HackerNews.MobileApp.Services.HackerNews.HackerNewsService/<Story>d__10": {
+        "System.Void HackerNews.MobileApp.Services.HackerNews.HackerNewsService/<Story>d__10::MoveNext()": {
+          "Lines": {
+            "77": 1,
+            "78": 1,
+            "79": 1,
+            "80": 1,
+            "81": 1,
+            "82": 1,
+            "83": 1
+          },
+          "Branches": [
+            {
+              "Line": 80,
+              "Offset": 88,
+              "EndOffset": 90,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 80,
+              "Offset": 88,
+              "EndOffset": 157,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Services\\Browser\\BrowserService.cs": {
+      "HackerNews.MobileApp.Services.Browser.BrowserService/<OpenBrowser>d__0": {
+        "System.Void HackerNews.MobileApp.Services.Browser.BrowserService/<OpenBrowser>d__0::MoveNext()": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": [
+            {
+              "Line": 11,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 60,
+              "EndOffset": 126,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\obj\\Debug\\netstandard2.0\\Pages\\StyleguidePage.xaml.g.cs": {
+      "HackerNews.MobileApp.Pages.StyleguidePage": {
+        "System.Void HackerNews.MobileApp.Pages.StyleguidePage::InitializeComponent()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 403,
+              "EndOffset": 405,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 403,
+              "EndOffset": 411,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Pages\\StyleguidePage.xaml.cs": {
+      "HackerNews.MobileApp.Pages.StyleguidePage": {
+        "System.Void HackerNews.MobileApp.Pages.StyleguidePage::.ctor()": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\obj\\Debug\\netstandard2.0\\Pages\\StoryDetail\\StoryView.xaml.g.cs": {
+      "HackerNews.MobileApp.Pages.StoryDetail.StoryView": {
+        "System.Void HackerNews.MobileApp.Pages.StoryDetail.StoryView::InitializeComponent()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 389,
+              "EndOffset": 391,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 389,
+              "EndOffset": 397,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Pages\\StoryDetail\\StoryView.xaml.cs": {
+      "HackerNews.MobileApp.Pages.StoryDetail.StoryView": {
+        "System.Void HackerNews.MobileApp.Pages.StoryDetail.StoryView::.ctor()": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Pages\\StoryDetail\\StoryViewModel.cs": {
+      "HackerNews.MobileApp.Pages.StoryDetail.StoryViewModel": {
+        "System.Threading.Tasks.Task HackerNews.MobileApp.Pages.StoryDetail.StoryViewModel::InitializeAsync(System.Object)": {
+          "Lines": {
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1
+          },
+          "Branches": []
+        },
+        "HackerNews.MobileApp.Models.Story HackerNews.MobileApp.Pages.StoryDetail.StoryViewModel::get_Story()": {
+          "Lines": {
+            "45": 6
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Pages.StoryDetail.StoryViewModel::set_Story(HackerNews.MobileApp.Models.Story)": {
+          "Lines": {
+            "46": 2
+          },
+          "Branches": []
+        },
+        "MvvmHelpers.ObservableRangeCollection`1<HackerNews.MobileApp.Models.Comment> HackerNews.MobileApp.Pages.StoryDetail.StoryViewModel::get_Comments()": {
+          "Lines": {
+            "49": 0
+          },
+          "Branches": []
+        },
+        "System.Windows.Input.ICommand HackerNews.MobileApp.Pages.StoryDetail.StoryViewModel::get_LoadStoryCommand()": {
+          "Lines": {
+            "51": 2
+          },
+          "Branches": []
+        },
+        "System.Windows.Input.ICommand HackerNews.MobileApp.Pages.StoryDetail.StoryViewModel::get_GoToUrlCommand()": {
+          "Lines": {
+            "88": 1
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Pages.StoryDetail.StoryViewModel::.ctor(HackerNews.MobileApp.Services.Navigation.INavigationService,HackerNews.MobileApp.Services.HackerNews.IHackerNewsService,HackerNews.MobileApp.Services.Browser.IBrowserService)": {
+          "Lines": {
+            "24": 3,
+            "25": 3,
+            "26": 3,
+            "27": 3,
+            "28": 3,
+            "29": 3,
+            "30": 3,
+            "31": 3
+          },
+          "Branches": []
+        }
+      },
+      "HackerNews.MobileApp.Pages.StoryDetail.StoryViewModel/<LoadStoryExecute>d__15": {
+        "System.Void HackerNews.MobileApp.Pages.StoryDetail.StoryViewModel/<LoadStoryExecute>d__15::MoveNext()": {
+          "Lines": {
+            "54": 2,
+            "55": 2,
+            "56": 0,
+            "58": 2,
+            "59": 2,
+            "60": 2,
+            "62": 2,
+            "63": 2,
+            "64": 46,
+            "65": 20,
+            "66": 20,
+            "67": 20,
+            "68": 20,
+            "70": 2,
+            "71": 0,
+            "73": 2,
+            "74": 2,
+            "75": 0,
+            "76": 0,
+            "78": 0,
+            "80": 0,
+            "81": 0,
+            "83": 2,
+            "84": 2,
+            "85": 2,
+            "86": 2
+          },
+          "Branches": [
+            {
+              "Line": 55,
+              "Offset": 29,
+              "EndOffset": 31,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 29,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 56,
+              "Offset": 39,
+              "EndOffset": 43,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 56,
+              "Offset": 45,
+              "EndOffset": 56,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 2
+            },
+            {
+              "Line": 56,
+              "Offset": 39,
+              "EndOffset": 63,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 56,
+              "Offset": 65,
+              "EndOffset": 69,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 2
+            },
+            {
+              "Line": 56,
+              "Offset": 71,
+              "EndOffset": 82,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 2
+            },
+            {
+              "Line": 60,
+              "Offset": 131,
+              "EndOffset": 133,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 56,
+              "Offset": 65,
+              "EndOffset": 172,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 60,
+              "Offset": 131,
+              "EndOffset": 200,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 2
+            },
+            {
+              "Line": 56,
+              "Offset": 71,
+              "EndOffset": 296,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 2
+            },
+            {
+              "Line": 64,
+              "Offset": 504,
+              "EndOffset": 310,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 20
+            },
+            {
+              "Line": 66,
+              "Offset": 364,
+              "EndOffset": 366,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 64,
+              "Offset": 299,
+              "EndOffset": 406,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 66,
+              "Offset": 364,
+              "EndOffset": 435,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 20
+            },
+            {
+              "Line": 64,
+              "Offset": 299,
+              "EndOffset": 493,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 22
+            },
+            {
+              "Line": 64,
+              "Offset": 504,
+              "EndOffset": 509,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 2
+            },
+            {
+              "Line": 70,
+              "Offset": 566,
+              "EndOffset": 568,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 0
+            },
+            {
+              "Line": 70,
+              "Offset": 566,
+              "EndOffset": 593,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 2
+            },
+            {
+              "Line": 75,
+              "Offset": 657,
+              "EndOffset": 664,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 0
+            },
+            {
+              "Line": 78,
+              "Offset": 732,
+              "EndOffset": 734,
+              "Path": 0,
+              "Ordinal": 22,
+              "Hits": 0
+            },
+            {
+              "Line": 56,
+              "Offset": 45,
+              "EndOffset": 774,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 78,
+              "Offset": 732,
+              "EndOffset": 803,
+              "Path": 1,
+              "Ordinal": 23,
+              "Hits": 0
+            },
+            {
+              "Line": 75,
+              "Offset": 657,
+              "EndOffset": 838,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 2
+            },
+            {
+              "Line": 81,
+              "Offset": 849,
+              "EndOffset": 851,
+              "Path": 0,
+              "Ordinal": 24,
+              "Hits": 2
+            },
+            {
+              "Line": 81,
+              "Offset": 849,
+              "EndOffset": 866,
+              "Path": 1,
+              "Ordinal": 25,
+              "Hits": 2
+            }
+          ]
+        }
+      },
+      "HackerNews.MobileApp.Pages.StoryDetail.StoryViewModel/<GoToUrlExecute>d__19": {
+        "System.Void HackerNews.MobileApp.Pages.StoryDetail.StoryViewModel/<GoToUrlExecute>d__19::MoveNext()": {
+          "Lines": {
+            "91": 1,
+            "92": 1,
+            "93": 0,
+            "95": 1,
+            "96": 1,
+            "97": 1,
+            "98": 1,
+            "99": 0,
+            "100": 0,
+            "102": 0,
+            "104": 0,
+            "105": 0,
+            "107": 1,
+            "108": 1,
+            "109": 1,
+            "110": 1
+          },
+          "Branches": [
+            {
+              "Line": 92,
+              "Offset": 29,
+              "EndOffset": 31,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 92,
+              "Offset": 29,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 93,
+              "Offset": 38,
+              "EndOffset": 42,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 93,
+              "Offset": 44,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 93,
+              "Offset": 38,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 93,
+              "Offset": 64,
+              "EndOffset": 70,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 97,
+              "Offset": 119,
+              "EndOffset": 121,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 93,
+              "Offset": 64,
+              "EndOffset": 160,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 97,
+              "Offset": 119,
+              "EndOffset": 188,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 1
+            },
+            {
+              "Line": 99,
+              "Offset": 229,
+              "EndOffset": 236,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 102,
+              "Offset": 304,
+              "EndOffset": 306,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 93,
+              "Offset": 44,
+              "EndOffset": 346,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 102,
+              "Offset": 304,
+              "EndOffset": 375,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 99,
+              "Offset": 229,
+              "EndOffset": 410,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 1
+            },
+            {
+              "Line": 105,
+              "Offset": 421,
+              "EndOffset": 423,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 1
+            },
+            {
+              "Line": 105,
+              "Offset": 421,
+              "EndOffset": 438,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\obj\\Debug\\netstandard2.0\\Pages\\Stories\\StoriesView.xaml.g.cs": {
+      "HackerNews.MobileApp.Pages.Stories.StoriesView": {
+        "System.Void HackerNews.MobileApp.Pages.Stories.StoriesView::InitializeComponent()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 193,
+              "EndOffset": 195,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 193,
+              "EndOffset": 201,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Pages\\Stories\\StoriesView.xaml.cs": {
+      "HackerNews.MobileApp.Pages.Stories.StoriesView": {
+        "System.Void HackerNews.MobileApp.Pages.Stories.StoriesView::.ctor()": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Pages\\Stories\\StoriesViewModel.cs": {
+      "HackerNews.MobileApp.Pages.Stories.StoriesViewModel": {
+        "System.Threading.Tasks.Task HackerNews.MobileApp.Pages.Stories.StoriesViewModel::InitializeAsync(System.Object)": {
+          "Lines": {
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1
+          },
+          "Branches": []
+        },
+        "MvvmHelpers.ObservableRangeCollection`1<HackerNews.MobileApp.Models.Story> HackerNews.MobileApp.Pages.Stories.StoriesViewModel::get_Stories()": {
+          "Lines": {
+            "36": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean HackerNews.MobileApp.Pages.Stories.StoriesViewModel::get_IsRefreshing()": {
+          "Lines": {
+            "41": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Pages.Stories.StoriesViewModel::set_IsRefreshing(System.Boolean)": {
+          "Lines": {
+            "42": 2
+          },
+          "Branches": []
+        },
+        "System.Windows.Input.ICommand HackerNews.MobileApp.Pages.Stories.StoriesViewModel::get_LoadStoriesCommand()": {
+          "Lines": {
+            "45": 2
+          },
+          "Branches": []
+        },
+        "System.Windows.Input.ICommand HackerNews.MobileApp.Pages.Stories.StoriesViewModel::get_GoToStoryCommand()": {
+          "Lines": {
+            "83": 1
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Pages.Stories.StoriesViewModel::.ctor(HackerNews.MobileApp.Services.Navigation.INavigationService,HackerNews.MobileApp.Services.HackerNews.IHackerNewsService)": {
+          "Lines": {
+            "22": 3,
+            "23": 3,
+            "24": 3,
+            "25": 3,
+            "26": 3,
+            "27": 3,
+            "28": 3
+          },
+          "Branches": []
+        }
+      },
+      "HackerNews.MobileApp.Pages.Stories.StoriesViewModel/<LoadStoriesExecute>d__14": {
+        "System.Void HackerNews.MobileApp.Pages.Stories.StoriesViewModel/<LoadStoriesExecute>d__14::MoveNext()": {
+          "Lines": {
+            "48": 2,
+            "49": 2,
+            "50": 0,
+            "52": 2,
+            "53": 2,
+            "54": 2,
+            "56": 2,
+            "57": 2,
+            "58": 46,
+            "59": 20,
+            "60": 20,
+            "61": 20,
+            "62": 20,
+            "64": 2,
+            "65": 0,
+            "67": 2,
+            "68": 2,
+            "69": 0,
+            "70": 0,
+            "72": 0,
+            "74": 0,
+            "75": 0,
+            "77": 2,
+            "78": 2,
+            "79": 2,
+            "80": 2,
+            "81": 2
+          },
+          "Branches": [
+            {
+              "Line": 49,
+              "Offset": 29,
+              "EndOffset": 31,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 29,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 50,
+              "Offset": 39,
+              "EndOffset": 43,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 50,
+              "Offset": 45,
+              "EndOffset": 56,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 2
+            },
+            {
+              "Line": 50,
+              "Offset": 39,
+              "EndOffset": 63,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 50,
+              "Offset": 65,
+              "EndOffset": 69,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 2
+            },
+            {
+              "Line": 50,
+              "Offset": 71,
+              "EndOffset": 82,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 2
+            },
+            {
+              "Line": 54,
+              "Offset": 125,
+              "EndOffset": 127,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 65,
+              "EndOffset": 166,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 54,
+              "Offset": 125,
+              "EndOffset": 194,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 2
+            },
+            {
+              "Line": 50,
+              "Offset": 71,
+              "EndOffset": 274,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 2
+            },
+            {
+              "Line": 58,
+              "Offset": 483,
+              "EndOffset": 288,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 20
+            },
+            {
+              "Line": 60,
+              "Offset": 343,
+              "EndOffset": 345,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 58,
+              "Offset": 277,
+              "EndOffset": 385,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 60,
+              "Offset": 343,
+              "EndOffset": 414,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 20
+            },
+            {
+              "Line": 58,
+              "Offset": 277,
+              "EndOffset": 472,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 22
+            },
+            {
+              "Line": 58,
+              "Offset": 483,
+              "EndOffset": 488,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 2
+            },
+            {
+              "Line": 64,
+              "Offset": 545,
+              "EndOffset": 547,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 0
+            },
+            {
+              "Line": 64,
+              "Offset": 545,
+              "EndOffset": 572,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 2
+            },
+            {
+              "Line": 69,
+              "Offset": 643,
+              "EndOffset": 650,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 0
+            },
+            {
+              "Line": 72,
+              "Offset": 718,
+              "EndOffset": 720,
+              "Path": 0,
+              "Ordinal": 22,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 45,
+              "EndOffset": 760,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 72,
+              "Offset": 718,
+              "EndOffset": 789,
+              "Path": 1,
+              "Ordinal": 23,
+              "Hits": 0
+            },
+            {
+              "Line": 69,
+              "Offset": 643,
+              "EndOffset": 824,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 2
+            },
+            {
+              "Line": 75,
+              "Offset": 835,
+              "EndOffset": 837,
+              "Path": 0,
+              "Ordinal": 24,
+              "Hits": 2
+            },
+            {
+              "Line": 75,
+              "Offset": 835,
+              "EndOffset": 865,
+              "Path": 1,
+              "Ordinal": 25,
+              "Hits": 2
+            }
+          ]
+        }
+      },
+      "HackerNews.MobileApp.Pages.Stories.StoriesViewModel/<GoToStoryExecute>d__18": {
+        "System.Void HackerNews.MobileApp.Pages.Stories.StoriesViewModel/<GoToStoryExecute>d__18::MoveNext()": {
+          "Lines": {
+            "86": 1,
+            "87": 1,
+            "88": 1
+          },
+          "Branches": [
+            {
+              "Line": 87,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 87,
+              "Offset": 60,
+              "EndOffset": 126,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\obj\\Debug\\netstandard2.0\\Pages\\Base\\CustomNavigationView.xaml.g.cs": {
+      "HackerNews.MobileApp.Pages.Base.CustomNavigationView": {
+        "System.Void HackerNews.MobileApp.Pages.Base.CustomNavigationView::InitializeComponent()": {
+          "Lines": {
+            "20": 0,
+            "21": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 60,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 75,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 93,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 112,
+              "EndOffset": 114,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 112,
+              "EndOffset": 120,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Pages\\Base\\CustomNavigationView.xaml.cs": {
+      "HackerNews.MobileApp.Pages.Base.CustomNavigationView": {
+        "System.Void HackerNews.MobileApp.Pages.Base.CustomNavigationView::.ctor(Xamarin.Forms.Page)": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Pages\\Base\\ViewModelBase.cs": {
+      "HackerNews.MobileApp.Pages.Base.ViewModelBase": {
+        "System.Threading.Tasks.Task HackerNews.MobileApp.Pages.Base.ViewModelBase::InitializeAsync(System.Object)": {
+          "Lines": {
+            "13": 2
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Pages.Base.ViewModelBase::.ctor(HackerNews.MobileApp.Services.Navigation.INavigationService)": {
+          "Lines": {
+            "11": 12
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Models\\Comment.cs": {
+      "HackerNews.MobileApp.Models.Comment": {
+        "System.String HackerNews.MobileApp.Models.Comment::get_By()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.Comment::get_Id()": {
+          "Lines": {
+            "8": 4
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<System.Int64> HackerNews.MobileApp.Models.Comment::get_Kids()": {
+          "Lines": {
+            "9": 2
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.Comment::get_Parent()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Models.Comment::get_Text()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.Comment::get_Time()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Models.Comment::get_Type()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Models\\HackerNewsItemType.cs": {
+      "HackerNews.MobileApp.Models.HackerNewsItemType": {
+        "HackerNews.MobileApp.Models.ItemType HackerNews.MobileApp.Models.HackerNewsItemType::get_Type()": {
+          "Lines": {
+            "5": 8
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Models\\ItemId.cs": {
+      "HackerNews.MobileApp.Models.ItemId": {
+        "System.Int64 HackerNews.MobileApp.Models.ItemId::get_Value()": {
+          "Lines": {
+            "5": 4
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Models.ItemId::.ctor(System.Int64)": {
+          "Lines": {
+            "7": 4,
+            "8": 4,
+            "9": 4,
+            "10": 4
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Models\\Job.cs": {
+      "HackerNews.MobileApp.Models.Job": {
+        "System.String HackerNews.MobileApp.Models.Job::get_By()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.Job::get_Id()": {
+          "Lines": {
+            "6": 2
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.Job::get_Score()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Models.Job::get_Text()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.Job::get_Time()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Models.Job::get_Title()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Models.Job::get_Type()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Models.Job::get_Url()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Models\\Poll.cs": {
+      "HackerNews.MobileApp.Models.Poll": {
+        "System.String HackerNews.MobileApp.Models.Poll::get_By()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.Poll::get_Descendants()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.Poll::get_Id()": {
+          "Lines": {
+            "9": 2
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<System.Int64> HackerNews.MobileApp.Models.Poll::get_Kids()": {
+          "Lines": {
+            "10": 2
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<System.Int64> HackerNews.MobileApp.Models.Poll::get_Parts()": {
+          "Lines": {
+            "11": 2
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.Poll::get_Score()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Models.Poll::get_Text()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.Poll::get_Time()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Models.Poll::get_Title()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Models.Poll::get_Type()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Models\\PollOpt.cs": {
+      "HackerNews.MobileApp.Models.PollOpt": {
+        "System.String HackerNews.MobileApp.Models.PollOpt::get_By()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.PollOpt::get_Id()": {
+          "Lines": {
+            "6": 2
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.PollOpt::get_Poll()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.PollOpt::get_Score()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Models.PollOpt::get_Text()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.PollOpt::get_Time()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Models.PollOpt::get_Type()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Models\\Story.cs": {
+      "HackerNews.MobileApp.Models.Story": {
+        "System.String HackerNews.MobileApp.Models.Story::get_By()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.Story::get_Descendants()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.Story::get_Id()": {
+          "Lines": {
+            "10": 10
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<System.Int64> HackerNews.MobileApp.Models.Story::get_Kids()": {
+          "Lines": {
+            "11": 6
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.Story::get_Score()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Models.Story::get_Text()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.Int64 HackerNews.MobileApp.Models.Story::get_Time()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Models.Story::get_Title()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Models.Story::get_Type()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        },
+        "System.Uri HackerNews.MobileApp.Models.Story::get_Url()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Converters\\ItemTappedEventArgsConverter.cs": {
+      "HackerNews.MobileApp.Converters.ItemTappedEventArgsConverter": {
+        "System.Object HackerNews.MobileApp.Converters.ItemTappedEventArgsConverter::Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": [
+            {
+              "Line": 11,
+              "Offset": 17,
+              "EndOffset": 19,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 17,
+              "EndOffset": 31,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Object HackerNews.MobileApp.Converters.ItemTappedEventArgsConverter::ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)": {
+          "Lines": {
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Converters\\StringToUppercaseConverter.cs": {
+      "HackerNews.MobileApp.Converters.StringToUppercaseConverter": {
+        "System.Object HackerNews.MobileApp.Converters.StringToUppercaseConverter::Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": [
+            {
+              "Line": 11,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 7,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Object HackerNews.MobileApp.Converters.StringToUppercaseConverter::ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)": {
+          "Lines": {
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Converters\\UnixTimeToDateTimeConverter.cs": {
+      "HackerNews.MobileApp.Converters.UnixTimeToDateTimeConverter": {
+        "System.Object HackerNews.MobileApp.Converters.UnixTimeToDateTimeConverter::Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": [
+            {
+              "Line": 11,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 7,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Object HackerNews.MobileApp.Converters.UnixTimeToDateTimeConverter::ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)": {
+          "Lines": {
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.String HackerNews.MobileApp.Converters.UnixTimeToDateTimeConverter::GetTimeSince(System.DateTimeOffset)": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": [
+            {
+              "Line": 30,
+              "Offset": 67,
+              "EndOffset": 69,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 30,
+              "Offset": 67,
+              "EndOffset": 89,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 97,
+              "EndOffset": 99,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 97,
+              "EndOffset": 119,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 34,
+              "Offset": 127,
+              "EndOffset": 129,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 34,
+              "Offset": 127,
+              "EndOffset": 149,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 36,
+              "Offset": 158,
+              "EndOffset": 160,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 36,
+              "Offset": 158,
+              "EndOffset": 181,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Converters\\VisibilityConverter.cs": {
+      "HackerNews.MobileApp.Converters.VisibilityConverter": {
+        "System.Object HackerNews.MobileApp.Converters.VisibilityConverter::Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Object HackerNews.MobileApp.Converters.VisibilityConverter::ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)": {
+          "Lines": {
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Behaviors\\EventToCommandBehavior.cs": {
+      "HackerNews.MobileApp.Behaviors.EventToCommandBehavior": {
+        "System.String HackerNews.MobileApp.Behaviors.EventToCommandBehavior::get_EventName()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.EventToCommandBehavior::set_EventName(System.String)": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": []
+        },
+        "System.Windows.Input.ICommand HackerNews.MobileApp.Behaviors.EventToCommandBehavior::get_Command()": {
+          "Lines": {
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.EventToCommandBehavior::set_Command(System.Windows.Input.ICommand)": {
+          "Lines": {
+            "30": 0
+          },
+          "Branches": []
+        },
+        "System.Object HackerNews.MobileApp.Behaviors.EventToCommandBehavior::get_CommandParameter()": {
+          "Lines": {
+            "38": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.EventToCommandBehavior::set_CommandParameter(System.Object)": {
+          "Lines": {
+            "39": 0
+          },
+          "Branches": []
+        },
+        "Xamarin.Forms.IValueConverter HackerNews.MobileApp.Behaviors.EventToCommandBehavior::get_Converter()": {
+          "Lines": {
+            "47": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.EventToCommandBehavior::set_Converter(Xamarin.Forms.IValueConverter)": {
+          "Lines": {
+            "48": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.EventToCommandBehavior::OnAttachedTo(Xamarin.Forms.View)": {
+          "Lines": {
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.EventToCommandBehavior::OnDetachingFrom(Xamarin.Forms.View)": {
+          "Lines": {
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.EventToCommandBehavior::RegisterEvent(System.String)": {
+          "Lines": {
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0
+          },
+          "Branches": [
+            {
+              "Line": 67,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 67,
+              "Offset": 9,
+              "EndOffset": 14,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 73,
+              "Offset": 41,
+              "EndOffset": 43,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 73,
+              "Offset": 41,
+              "EndOffset": 71,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.EventToCommandBehavior::DeregisterEvent(System.String)": {
+          "Lines": {
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0
+          },
+          "Branches": [
+            {
+              "Line": 85,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 85,
+              "Offset": 9,
+              "EndOffset": 14,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 90,
+              "Offset": 25,
+              "EndOffset": 27,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 90,
+              "Offset": 25,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 96,
+              "Offset": 57,
+              "EndOffset": 59,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 96,
+              "Offset": 57,
+              "EndOffset": 87,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.EventToCommandBehavior::OnEvent(System.Object,System.Object)": {
+          "Lines": {
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0
+          },
+          "Branches": [
+            {
+              "Line": 107,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 107,
+              "Offset": 12,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 113,
+              "Offset": 28,
+              "EndOffset": 30,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 113,
+              "Offset": 28,
+              "EndOffset": 41,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 117,
+              "Offset": 52,
+              "EndOffset": 54,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 117,
+              "Offset": 52,
+              "EndOffset": 83,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 126,
+              "Offset": 103,
+              "EndOffset": 105,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 126,
+              "Offset": 103,
+              "EndOffset": 120,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.EventToCommandBehavior::OnEventNameChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)": {
+          "Lines": {
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "140": 0,
+            "141": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0
+          },
+          "Branches": [
+            {
+              "Line": 135,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 135,
+              "Offset": 19,
+              "EndOffset": 24,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.EventToCommandBehavior::.cctor()": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "24": 0,
+            "25": 0,
+            "33": 0,
+            "34": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Source\\Repos\\HackerNews\\HackerNews.MobileApp\\HackerNews.MobileApp\\Behaviors\\Base\\BindableBehavior.cs": {
+      "HackerNews.MobileApp.Behaviors.Base.BindableBehavior`1": {
+        "T HackerNews.MobileApp.Behaviors.Base.BindableBehavior`1::get_AssociatedObject()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.Base.BindableBehavior`1::OnAttachedTo(T)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "14": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": [
+            {
+              "Line": 16,
+              "Offset": 33,
+              "EndOffset": 35,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 16,
+              "Offset": 33,
+              "EndOffset": 55,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.Base.BindableBehavior`1::OnDetachingFrom(T)": {
+          "Lines": {
+            "25": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.Base.BindableBehavior`1::OnBindingContextChanged()": {
+          "Lines": {
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0
+          },
+          "Branches": []
+        },
+        "System.Void HackerNews.MobileApp.Behaviors.Base.BindableBehavior`1::OnBindingContextChanged(System.Object,System.EventArgs)": {
+          "Lines": {
+            "33": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

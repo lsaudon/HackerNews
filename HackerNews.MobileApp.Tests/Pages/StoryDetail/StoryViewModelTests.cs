@@ -40,9 +40,12 @@ namespace HackerNews.MobileApp.Tests.Pages.StoryDetail
 
             var storyViewModel = new StoryViewModel(navigationServiceMock.Object, hackerNewsServiceMock.Object, browserServiceMock.Object);
             storyViewModel.InitializeAsync(storyId);
+
             Check.That(storyViewModel.Story).IsNotNull();
             Check.That(storyViewModel.Story.Id).IsEqualTo(1);
             Check.That(storyViewModel.Comments.Count).IsEqualTo(10);
+            hackerNewsServiceMock.Verify(x => x.Story(It.IsAny<long>()), Times.Once());
+            hackerNewsServiceMock.Verify(x => x.Comment(It.IsAny<long>()), Times.Exactly(10));
         }
 
         [Fact]
@@ -61,9 +64,12 @@ namespace HackerNews.MobileApp.Tests.Pages.StoryDetail
 
             var storyViewModel = new StoryViewModel(navigationServiceMock.Object, hackerNewsServiceMock.Object, browserServiceMock.Object);
             storyViewModel.LoadStoryCommand.Execute(storyId);
+
             Check.That(storyViewModel.Story).IsNotNull();
             Check.That(storyViewModel.Story.Id).IsEqualTo(1);
             Check.That(storyViewModel.Comments.Count).IsEqualTo(10);
+            hackerNewsServiceMock.Verify(x => x.Story(It.IsAny<long>()), Times.Once());
+            hackerNewsServiceMock.Verify(x => x.Comment(It.IsAny<long>()), Times.Exactly(10));
         }
 
         [Fact]
@@ -75,6 +81,7 @@ namespace HackerNews.MobileApp.Tests.Pages.StoryDetail
 
             var storyViewModel = new StoryViewModel(navigationServiceMock.Object, hackerNewsServiceMock.Object, browserServiceMock.Object);
             storyViewModel.GoToUrlCommand.Execute(new Uri("https://www.twitch.tv/"));
+
             browserServiceMock.Verify(x => x.OpenBrowser(It.IsAny<Uri>()), Times.Once());
         }
     }
