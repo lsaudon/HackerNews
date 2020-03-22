@@ -8,7 +8,7 @@ namespace HackerNews.MobileApp.Pages.Base
     {
         protected readonly INavigationService NavigationService;
 
-        protected ViewModelBase() => NavigationService = ViewModelLocator.Resolve<INavigationService>();
+        protected ViewModelBase(INavigationService navigationService) => NavigationService = navigationService;
 
         public virtual Task InitializeAsync(object navigationData) => Task.FromResult(false);
     }

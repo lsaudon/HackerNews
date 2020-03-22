@@ -8,6 +8,7 @@ using HackerNews.MobileApp.Models;
 using HackerNews.MobileApp.Pages.Base;
 using HackerNews.MobileApp.Services.Browser;
 using HackerNews.MobileApp.Services.HackerNews;
+using HackerNews.MobileApp.Services.Navigation;
 using MvvmHelpers;
 using MvvmHelpers.Commands;
 using Xamarin.Forms;
@@ -19,7 +20,8 @@ namespace HackerNews.MobileApp.Pages.StoryDetail
         private readonly IHackerNewsService HackerNewsService;
         private readonly IBrowserService BrowserService;
 
-        public StoryViewModel(IHackerNewsService hackerNewsService, IBrowserService browserService)
+        public StoryViewModel(INavigationService navigationService, IHackerNewsService hackerNewsService,
+            IBrowserService browserService) : base(navigationService)
         {
             HackerNewsService = hackerNewsService;
             BrowserService = browserService;

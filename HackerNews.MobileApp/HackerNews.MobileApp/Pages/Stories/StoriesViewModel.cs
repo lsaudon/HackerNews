@@ -8,6 +8,7 @@ using HackerNews.MobileApp.Models;
 using HackerNews.MobileApp.Pages.Base;
 using HackerNews.MobileApp.Pages.StoryDetail;
 using HackerNews.MobileApp.Services.HackerNews;
+using HackerNews.MobileApp.Services.Navigation;
 using MvvmHelpers;
 using MvvmHelpers.Commands;
 using Xamarin.Forms;
@@ -18,7 +19,7 @@ namespace HackerNews.MobileApp.Pages.Stories
     {
         private readonly IHackerNewsService HackerNewsService;
 
-        public StoriesViewModel(IHackerNewsService hackerNewsService)
+        public StoriesViewModel(INavigationService navigationService, IHackerNewsService hackerNewsService) : base(navigationService)
         {
             HackerNewsService = hackerNewsService;
             Title = "New Stories";
@@ -35,7 +36,8 @@ namespace HackerNews.MobileApp.Pages.Stories
         public ObservableRangeCollection<Story> Stories { get; set; } = new ObservableRangeCollection<Story>();
 
         private bool isRefreshing;
-        public bool IsRefreshing { 
+        public bool IsRefreshing
+        {
             get => isRefreshing;
             set => SetProperty(ref isRefreshing, value);
         }
@@ -49,7 +51,7 @@ namespace HackerNews.MobileApp.Pages.Stories
             try
             {
                 IsBusy = true;
-                var ids = await HackerNewsService.BestStories();
+                var ids = await HackerNewsService.NewStories();
 
                 var stories = new List<Story>();
                 var numberStories = 10;

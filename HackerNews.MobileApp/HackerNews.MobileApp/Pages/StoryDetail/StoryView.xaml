@@ -4,7 +4,6 @@
     x:Class="HackerNews.MobileApp.Pages.StoryDetail.StoryView"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:behaviors="clr-namespace:HackerNews.MobileApp.Behaviors;assembly=HackerNews.MobileApp"
     xmlns:mobileApp="clr-namespace:HackerNews.MobileApp;assembly=HackerNews.MobileApp"
     xmlns:models="clr-namespace:HackerNews.MobileApp.Models;assembly=HackerNews.MobileApp"
     xmlns:storyDetail="clr-namespace:HackerNews.MobileApp.Pages.StoryDetail;assembly=HackerNews.MobileApp"
@@ -78,7 +77,6 @@
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-
                 <ListView.Footer>
                     <StackLayout HeightRequest="85" />
                 </ListView.Footer>
