@@ -13,23 +13,16 @@
     x:DataType="stories:StoriesViewModel"
     BackgroundColor="{StaticResource GreyA}">
     <StackLayout>
-        <ListView
-            BackgroundColor="{StaticResource GreyA}"
-            HasUnevenRows="true"
-            IsPullToRefreshEnabled="True"
-            IsRefreshing="{Binding IsRefreshing}"
-            ItemsSource="{Binding Stories}"
-            RefreshCommand="{Binding LoadStoriesCommand}"
-            SelectionMode="None">
-            <ListView.Behaviors>
-                <behaviors:EventToCommandBehavior
-                    Command="{Binding GoToStoryCommand}"
-                    Converter="{StaticResource ItemTappedEventArgsConverter}"
-                    EventName="ItemTapped" />
-            </ListView.Behaviors>
-            <ListView.ItemTemplate>
-                <DataTemplate x:DataType="models:Story">
-                    <ViewCell>
+        <RefreshView Command="{Binding LoadStoriesCommand}" IsRefreshing="{Binding IsRefreshing}">
+            <CollectionView
+                x:Name="MyCollectionView"
+                ItemsSource="{Binding Stories}"
+                SelectedItem="{Binding SelectedStory}"
+                SelectionChangedCommand="{Binding GoToStoryCommand}"
+                SelectionChangedCommandParameter="{Binding Path=SelectedItem, Source={x:Reference MyCollectionView}}"
+                SelectionMode="Single">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Story">
                         <Grid Padding="30,15">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="56" />
@@ -65,9 +58,9 @@
                                 <Label Style="{StaticResource ArticleDate}" Text="{Binding Time, Converter={StaticResource UnixTimeToDateTimeConverter}, StringFormat='{0:dd MMMM yyyy}'}" />
                             </StackLayout>
                         </Grid>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
     </StackLayout>
 </ContentPage>

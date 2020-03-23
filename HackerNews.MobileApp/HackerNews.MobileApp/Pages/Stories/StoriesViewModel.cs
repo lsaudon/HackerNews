@@ -42,6 +42,13 @@ namespace HackerNews.MobileApp.Pages.Stories
             set => SetProperty(ref isRefreshing, value);
         }
 
+        private Story selectedStory;
+        public Story SelectedStory
+        {
+            get => selectedStory;
+            set => SetProperty(ref selectedStory, value);
+        }
+
         public ICommand LoadStoriesCommand { get; }
 
         private async Task LoadStoriesExecute()
@@ -51,7 +58,7 @@ namespace HackerNews.MobileApp.Pages.Stories
             try
             {
                 IsBusy = true;
-                var ids = await HackerNewsService.NewStories();
+                var ids = await HackerNewsService.BestStories();
 
                 var stories = new List<Story>();
                 var numberStories = 10;
@@ -84,7 +91,11 @@ namespace HackerNews.MobileApp.Pages.Stories
 
         private async Task GoToStoryExecute(Story story)
         {
+            if (story == null) return;
+
             await NavigationService.NavigateToAsync<StoryViewModel>(story.Id);
+
+            SelectedStory = null;
         }
     }
 }
