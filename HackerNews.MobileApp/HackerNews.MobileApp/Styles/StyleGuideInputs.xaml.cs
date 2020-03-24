@@ -3,9 +3,9 @@
 namespace HackerNews.MobileApp.Styles
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ThemeLight
+    public partial class StyleGuideInputs
     {
-        public ThemeLight()
+        public StyleGuideInputs()
         {
             InitializeComponent();
         }

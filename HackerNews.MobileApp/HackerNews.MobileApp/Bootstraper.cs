@@ -1,6 +1,5 @@
 ﻿using HackerNews.MobileApp.Common;
 using HackerNews.MobileApp.Navigations;
-using HackerNews.MobileApp.Pages;
 using HackerNews.MobileApp.Pages.Stories;
 using HackerNews.MobileApp.Pages.StoryDetail;
 using HackerNews.MobileApp.Services.Browser;
@@ -18,9 +17,6 @@ namespace HackerNews.MobileApp
 
             ViewModelLocator.RegisterViewModel<StoriesView, StoriesViewModel>();
             ViewModelLocator.RegisterViewModel<StoryView, StoryViewModel>();
-            ViewModelLocator.RegisterViewModel<OneView, OneViewModel>();
-            ViewModelLocator.RegisterViewModel<TwoView, TwoViewModel>();
-            ViewModelLocator.RegisterViewModel<ThreeView, ThreeViewModel>();
 
             ViewModelLocator.RegisterSingleton<NavigationService, INavigationService>();
             ViewModelLocator.Register<BrowserService, IBrowserService>();

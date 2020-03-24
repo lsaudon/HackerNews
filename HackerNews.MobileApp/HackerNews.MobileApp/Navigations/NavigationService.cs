@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using HackerNews.MobileApp.Common;
-using HackerNews.MobileApp.Pages;
 using HackerNews.MobileApp.Pages.Base;
+using HackerNews.MobileApp.Pages.Stories;
 using Xamarin.Forms;
 
 namespace HackerNews.MobileApp.Navigations
@@ -24,7 +24,7 @@ namespace HackerNews.MobileApp.Navigations
             _applicationProvider = applicationProvider;
         }
 
-        public Task InitializeAsync() => PushToAsync<OneViewModel>();
+        public Task InitializeAsync() => PushToAsync<StoriesViewModel>();
 
         public Task PushToAsync<TViewModel>() where TViewModel : ViewModelBase =>
             PushToAsync<TViewModel>(null);

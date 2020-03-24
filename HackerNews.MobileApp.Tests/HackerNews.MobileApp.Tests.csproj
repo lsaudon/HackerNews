@@ -4,6 +4,11 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Navigations\**" />
+    <EmbeddedResource Remove="Navigations\**" />
+    <None Remove="Navigations\**" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     <PackageReference Include="Moq" Version="4.13.1" />
     <PackageReference Include="NFluent" Version="2.7.0" />
@@ -17,8 +22,5 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HackerNews.MobileApp\HackerNews.MobileApp\HackerNews.MobileApp.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Navigations\" />
   </ItemGroup>
 </Project>

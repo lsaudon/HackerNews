@@ -59,18 +59,21 @@ namespace HackerNews.MobileApp.Pages.StoryDetail
                 IsBusy = true;
                 Story = await HackerNewsService.Story(storyId);
 
-                var numberStories = 10;
-                var comments = new List<Comment>();
-                foreach (var kidId in Story.Kids.Take(numberStories))
+                if (Story.Kids != null)
                 {
-                    var comment = await HackerNewsService.Comment(kidId);
-                    comments.Add(comment);
-                }
+                    var numberStories = 10;
+                    var comments = new List<Comment>();
+                    foreach (var kidId in Story.Kids.Take(numberStories))
+                    {
+                        var comment = await HackerNewsService.Comment(kidId);
+                        comments.Add(comment);
+                    }
 
-                if (Comments.Count > 0)
-                    Comments.ReplaceRange(comments);
-                else
-                    Comments.AddRange(comments);
+                    if (Comments.Count > 0)
+                        Comments.ReplaceRange(comments);
+                    else
+                        Comments.AddRange(comments);
+                }
             }
             catch (Exception ex)
             {

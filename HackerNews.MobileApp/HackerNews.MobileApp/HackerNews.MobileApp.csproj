@@ -31,9 +31,6 @@
     <Compile Update="Styles\StyleGuideLists.xaml.cs">
       <DependentUpon>StyleGuideLists.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Styles\StyleGuideInput.xaml.cs">
-      <DependentUpon>StyleGuideInput.xaml</DependentUpon>
-    </Compile>
     <Compile Update="Styles\StyleGuideFonts.xaml.cs">
       <DependentUpon>StyleGuideFonts.xaml</DependentUpon>
     </Compile>
@@ -43,31 +40,13 @@
     <Compile Update="Styles\StyleGuideButtons.xaml.cs">
       <DependentUpon>StyleGuideButtons.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Styles\StyleGuide.xaml.cs">
-      <DependentUpon>StyleGuide.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Styles\Converters.xaml.cs">
-      <DependentUpon>Converters.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Styles\Styles.xaml.cs">
-      <DependentUpon>Styles.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Styles\Fonts.xaml.cs">
-      <DependentUpon>Fonts.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Styles\ThemeLight.xaml.cs">
-      <DependentUpon>ThemeLight.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Styles\ThemeDark.xaml.cs">
-      <DependentUpon>ThemeDark.xaml</DependentUpon>
+    <Compile Update="Converters\ConverterResources.xaml.cs">
+      <DependentUpon>ConverterResources.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="Pages\Base\CustomNavigationView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Pages\OneView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\Stories\StoriesView.xaml">
@@ -77,15 +56,6 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\StyleguidePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Pages\ThreeView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Pages\TwoView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Styles\Colors.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

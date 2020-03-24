@@ -2,4 +2,17 @@
 <ResourceDictionary
     x:Class="HackerNews.MobileApp.Styles.StyleGuideFonts"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" />
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <OnPlatform x:Key="MontserratBold" x:TypeArguments="x:String">
+        <On Platform="Android" Value="Fonts/Montserrat/Montserrat-Bold.ttf#Montserrat" />
+    </OnPlatform>
+    <OnPlatform x:Key="MontserratRegular" x:TypeArguments="x:String">
+        <On Platform="Android" Value="Fonts/Montserrat/Montserrat-Regular.ttf#Montserrat" />
+    </OnPlatform>
+    <OnPlatform x:Key="ZillaSlabRegular" x:TypeArguments="x:String">
+        <On Platform="Android" Value="Fonts/Zilla_Slab/ZillaSlab-Regular.ttf#ZillaSlab" />
+    </OnPlatform>
+    <OnPlatform x:Key="ZillaSlabRegularItalic" x:TypeArguments="x:String">
+        <On Platform="Android" Value="Fonts/Zilla_Slab/ZillaSlab-Italic.ttf#ZillaSlab" />
+    </OnPlatform>
+</ResourceDictionary>

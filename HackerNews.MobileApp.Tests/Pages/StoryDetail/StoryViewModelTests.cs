@@ -52,11 +52,11 @@ namespace HackerNews.MobileApp.Tests.Pages.StoryDetail
         public void When_LoadNewStoriesCommand_Then_LoadNewStoriesExecute()
         {
             var storyId = (long)1;
-            var commentId = new List<long> { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+            var commentIds = new List<long> { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
 
             hackerNewsServiceMock
                 .Setup(x => x.Story(storyId))
-                .Returns(Task.FromResult(new Story { Id = storyId, Kids = commentId }));
+                .Returns(Task.FromResult(new Story { Id = storyId, Kids = commentIds }));
 
             hackerNewsServiceMock
                 .Setup(x => x.Comment(It.IsAny<long>()))
@@ -71,6 +71,29 @@ namespace HackerNews.MobileApp.Tests.Pages.StoryDetail
             hackerNewsServiceMock.Verify(x => x.Story(It.IsAny<long>()), Times.Once());
             hackerNewsServiceMock.Verify(x => x.Comment(It.IsAny<long>()), Times.Exactly(10));
         }
+
+        [Fact]
+        public void When_LoadNewStoriesCommandWithoutComment_Then_LoadNewStoriesExecute()
+        {
+            var storyId = (long)1;
+
+            hackerNewsServiceMock
+                .Setup(x => x.Story(storyId))
+                .Returns(Task.FromResult(new Story { Id = storyId, Kids = null }));
+
+            hackerNewsServiceMock
+                .Setup(x => x.Comment(It.IsAny<long>()))
+                .Returns(Task.FromResult(new Comment { Id = It.IsAny<long>() }));
+
+            var storyViewModel = new StoryViewModel(navigationServiceMock.Object, hackerNewsServiceMock.Object, browserServiceMock.Object);
+            storyViewModel.LoadStoryCommand.Execute(storyId);
+
+            Check.That(storyViewModel.Story).IsNotNull();
+            Check.That(storyViewModel.Story.Id).IsEqualTo(1);
+            Check.That(storyViewModel.Comments.Count).IsEqualTo(0);
+            hackerNewsServiceMock.Verify(x => x.Story(It.IsAny<long>()), Times.Once());
+        }
+
 
         [Fact]
         public void When_GoToUrlCommand_Then_GoToUrlExecute()

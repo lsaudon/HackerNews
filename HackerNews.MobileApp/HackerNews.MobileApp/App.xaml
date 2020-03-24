@@ -7,12 +7,14 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Styles/Colors.xaml" />
-                <ResourceDictionary Source="Styles/Converters.xaml" />
-                <ResourceDictionary Source="Styles/Fonts.xaml" />
-                <ResourceDictionary Source="Styles/ThemeDark.xaml" />
-                <ResourceDictionary Source="Styles/ThemeLight.xaml" />
-                <ResourceDictionary Source="Styles/Styles.xaml" />
+                <ResourceDictionary Source="Styles/StyleGuideColors.xaml" />
+                <ResourceDictionary Source="Styles/StyleGuideFonts.xaml" />
+                <ResourceDictionary Source="Styles/StyleGuideTypography.xaml" />
+                <ResourceDictionary Source="Styles/StyleGuideButtons.xaml" />
+                <ResourceDictionary Source="Styles/StyleGuideInputs.xaml" />
+                <ResourceDictionary Source="Styles/StyleGuideLists.xaml" />
+                <ResourceDictionary Source="Styles/StyleGuideStates.xaml" />
+                <ResourceDictionary Source="Converters/ConverterResources.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

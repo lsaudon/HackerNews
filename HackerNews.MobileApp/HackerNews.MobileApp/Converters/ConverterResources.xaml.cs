@@ -1,11 +1,11 @@
 ﻿using Xamarin.Forms.Xaml;
 
-namespace HackerNews.MobileApp.Styles
+namespace HackerNews.MobileApp.Converters
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class StyleGuideInput
+    public partial class ConverterResources
     {
-        public StyleGuideInput()
+        public ConverterResources()
         {
             InitializeComponent();
         }
