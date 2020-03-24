@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using HackerNews.MobileApp.Models;
+using HackerNews.MobileApp.Navigation;
 using HackerNews.MobileApp.Pages.StoryDetail;
 using HackerNews.MobileApp.Services.Browser;
 using HackerNews.MobileApp.Services.HackerNews;
-using HackerNews.MobileApp.Services.Navigation;
 using Moq;
 using NFluent;
 using Xunit;

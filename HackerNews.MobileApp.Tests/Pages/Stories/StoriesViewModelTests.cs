@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using HackerNews.MobileApp.Models;
+using HackerNews.MobileApp.Navigation;
 using HackerNews.MobileApp.Pages.Stories;
 using HackerNews.MobileApp.Pages.StoryDetail;
 using HackerNews.MobileApp.Services.HackerNews;
-using HackerNews.MobileApp.Services.Navigation;
 using Moq;
 using NFluent;
 using Xunit;
@@ -71,7 +71,7 @@ namespace HackerNews.MobileApp.Tests.Pages.Stories
 
             storyViewModel.GoToStoryCommand.Execute( new Story {Id = 1});
 
-            navigationServiceMock.Verify(x => x.NavigateToAsync<StoryViewModel>((long)1), Times.Once());
+            navigationServiceMock.Verify(x => x.PushToAsync<StoryViewModel>((long)1), Times.Once());
         }
     }
 }

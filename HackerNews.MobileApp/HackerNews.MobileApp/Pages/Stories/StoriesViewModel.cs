@@ -5,10 +5,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using HackerNews.MobileApp.Models;
+using HackerNews.MobileApp.Navigation;
 using HackerNews.MobileApp.Pages.Base;
 using HackerNews.MobileApp.Pages.StoryDetail;
 using HackerNews.MobileApp.Services.HackerNews;
-using HackerNews.MobileApp.Services.Navigation;
 using MvvmHelpers;
 using MvvmHelpers.Commands;
 using Xamarin.Forms;
@@ -93,7 +93,7 @@ namespace HackerNews.MobileApp.Pages.Stories
         {
             if (story == null) return;
 
-            await NavigationService.NavigateToAsync<StoryViewModel>(story.Id);
+            await NavigationService.PushToAsync<StoryViewModel>(story.Id);
 
             SelectedStory = null;
         }

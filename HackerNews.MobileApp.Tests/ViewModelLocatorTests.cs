@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using HackerNews.MobileApp.Common;
+using HackerNews.MobileApp.Navigation;
 using HackerNews.MobileApp.Pages.Base;
-using HackerNews.MobileApp.Services.Navigation;
 using NFluent;
 using Xamarin.Forms;
 using Xunit;
@@ -64,6 +65,7 @@ namespace HackerNews.MobileApp.Tests
         private static void InitializeAViewModelIoC()
         {
             ViewModelLocator.Initialize();
+            ViewModelLocator.Register<ApplicationProvider,IApplicationProvider>();
             ViewModelLocator.RegisterSingleton<NavigationService, INavigationService>();
             ViewModelLocator.RegisterViewModel<AView, AViewModel>();
             ViewModelLocator.Build();

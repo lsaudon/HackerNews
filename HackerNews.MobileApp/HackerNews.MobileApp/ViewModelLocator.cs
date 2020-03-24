@@ -3,11 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Autofac;
 using HackerNews.MobileApp.Pages.Base;
-using HackerNews.MobileApp.Pages.Stories;
-using HackerNews.MobileApp.Pages.StoryDetail;
-using HackerNews.MobileApp.Services.Browser;
-using HackerNews.MobileApp.Services.HackerNews;
-using HackerNews.MobileApp.Services.Navigation;
 using Xamarin.Forms;
 
 namespace HackerNews.MobileApp
