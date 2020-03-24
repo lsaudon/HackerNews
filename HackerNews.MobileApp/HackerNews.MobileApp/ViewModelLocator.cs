@@ -12,9 +12,10 @@ using Xamarin.Forms;
 
 namespace HackerNews.MobileApp
 {
-    public class ViewModelLocator
+    public static class ViewModelLocator
     {
         private static IContainer _container;
+        private static ContainerBuilder _builder;
 
         private static readonly Dictionary<Type, Type> LinkedViewAndViewModel = new Dictionary<Type, Type>();
 
@@ -22,43 +23,50 @@ namespace HackerNews.MobileApp
             BindableProperty.CreateAttached("AutoWireViewModel", typeof(bool), typeof(ViewModelLocator), default(bool),
                 propertyChanged: OnAutoWireViewModelChanged);
 
-        public static bool GetAutoWireViewModel(BindableObject bindableObject) =>
-            (bool)bindableObject.GetValue(AutoWireViewModelProperty);
-
-        public static void SetAutoWireViewModel(BindableObject bindableObject, bool value) =>
-            bindableObject.SetValue(AutoWireViewModelProperty, value);
-
-        public static void RegisterDependencies(bool useMockSerivces)
+        public static bool GetAutoWireViewModel(BindableObject bindable)
         {
-            var builder = new ContainerBuilder();
-
-            //View models
-            AddLinkViewAndViewModel<StoriesView, StoriesViewModel>(builder);
-            AddLinkViewAndViewModel<StoryView, StoryViewModel>(builder);
-
-            //Services
-            builder.RegisterType<NavigationService>().As<INavigationService>().SingleInstance();
-            builder.RegisterType<BrowserService>().As<IBrowserService>();
-
-            if (useMockSerivces)
-            {
-                builder.RegisterType<HackerNewsService>().As<IHackerNewsService>();
-            }
-            else
-            {
-                builder.RegisterType<HackerNewsService>().As<IHackerNewsService>();
-            }
-
-            _container?.Dispose();
-            _container = builder.Build();
+            return (bool)bindable.GetValue(AutoWireViewModelProperty);
         }
 
-        private static void AddLinkViewAndViewModel<TView, TViewModel>(ContainerBuilder builder)
+        public static void SetAutoWireViewModel(BindableObject bindable, bool value)
+        {
+            bindable.SetValue(AutoWireViewModelProperty, value);
+        }
+
+        public static void Initialize()
+        {
+            _builder = new ContainerBuilder();
+            LinkedViewAndViewModel.Clear();
+        }
+
+        public static void RegisterSingleton<T, TInterface>()
+        {
+            _builder.RegisterType<T>().As<TInterface>().SingleInstance();
+        }
+
+        public static void Register<T, TInterface>()
+        {
+            _builder.RegisterType<T>().As<TInterface>();
+        }
+
+        public static void RegisterViewModel<TView, TViewModel>()
             where TView : ContentPage
             where TViewModel : ViewModelBase
         {
-            builder.RegisterType<TViewModel>();
+            _builder.RegisterType<TViewModel>();
             LinkedViewAndViewModel.Add(typeof(TView), typeof(TViewModel));
+        }
+
+        public static void Build()
+        {
+            _container?.Dispose();
+            _container = _builder.Build();
+        }
+
+        public static T Resolve<T>()
+            where T : class
+        {
+            return _container.Resolve<T>();
         }
 
         public static Type FindViewByViewModel(Type viewModelType)
@@ -66,25 +74,21 @@ namespace HackerNews.MobileApp
             return LinkedViewAndViewModel.FirstOrDefault(x => x.Value == viewModelType).Key;
         }
 
-        public static T Resolve<T>()
-        {
-            return _container.Resolve<T>();
-        }
-
         private static void OnAutoWireViewModelChanged(BindableObject bindable, object oldValue, object newValue)
         {
             var view = bindable as Element;
+            if (view == null)
+            {
+                return;
+            }
 
-            var viewType = view?.GetType();
-
-            if (viewType == null) return;
+            var viewType = view.GetType();
 
             var viewModelType = LinkedViewAndViewModel[viewType];
-
-            if (viewModelType == null) return;
 
             var viewModel = _container.Resolve(viewModelType);
             view.BindingContext = viewModel;
         }
+
     }
 }

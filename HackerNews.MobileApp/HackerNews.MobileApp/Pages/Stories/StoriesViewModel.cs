@@ -58,7 +58,7 @@ namespace HackerNews.MobileApp.Pages.Stories
             try
             {
                 IsBusy = true;
-                var ids = await HackerNewsService.BestStories();
+                var ids = await HackerNewsService.NewStories();
 
                 var stories = new List<Story>();
                 var numberStories = 10;

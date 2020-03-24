@@ -9,7 +9,7 @@ namespace HackerNews.MobileApp
         {
             InitializeComponent();
 
-            InitializeApp();
+            Bootstraper.InitializeApp(true);
         }
 
         protected override async void OnStart()
@@ -24,11 +24,6 @@ namespace HackerNews.MobileApp
 
         protected override void OnResume()
         {
-        }
-
-        private void InitializeApp()
-        {
-            ViewModelLocator.RegisterDependencies(true);
         }
 
         private Task InitializeNavigation()
