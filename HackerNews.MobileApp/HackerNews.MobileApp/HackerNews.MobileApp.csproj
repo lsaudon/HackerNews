@@ -22,6 +22,30 @@
     <Compile Update="Pages\Stories\StoriesView.xaml.cs">
       <DependentUpon>StoriesView.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Styles\StyleGuideTypography.xaml.cs">
+      <DependentUpon>StyleGuideTypography.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Styles\StyleGuideStates.xaml.cs">
+      <DependentUpon>StyleGuideStates.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Styles\StyleGuideLists.xaml.cs">
+      <DependentUpon>StyleGuideLists.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Styles\StyleGuideInput.xaml.cs">
+      <DependentUpon>StyleGuideInput.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Styles\StyleGuideFonts.xaml.cs">
+      <DependentUpon>StyleGuideFonts.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Styles\StyleGuideColors.xaml.cs">
+      <DependentUpon>StyleGuideColors.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Styles\StyleGuideButtons.xaml.cs">
+      <DependentUpon>StyleGuideButtons.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Styles\StyleGuide.xaml.cs">
+      <DependentUpon>StyleGuide.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Styles\Converters.xaml.cs">
       <DependentUpon>Converters.xaml</DependentUpon>
     </Compile>
