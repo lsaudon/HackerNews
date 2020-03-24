@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using HackerNews.MobileApp.Common;
-using HackerNews.MobileApp.Navigation;
+using HackerNews.MobileApp.Navigations;
 using HackerNews.MobileApp.Pages.Base;
 using NFluent;
 using Xamarin.Forms;

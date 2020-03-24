@@ -1,5 +1,5 @@
 ﻿using System.Windows.Input;
-using HackerNews.MobileApp.Navigation;
+using HackerNews.MobileApp.Navigations;
 using HackerNews.MobileApp.Pages.Base;
 using MvvmHelpers.Commands;
 

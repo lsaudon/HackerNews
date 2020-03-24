@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using HackerNews.MobileApp.Models;
-using HackerNews.MobileApp.Navigation;
+using HackerNews.MobileApp.Navigations;
 using HackerNews.MobileApp.Pages.StoryDetail;
 using HackerNews.MobileApp.Services.Browser;
 using HackerNews.MobileApp.Services.HackerNews;

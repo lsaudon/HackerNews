@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using HackerNews.MobileApp.Models;
-using HackerNews.MobileApp.Navigation;
+using HackerNews.MobileApp.Navigations;
 using HackerNews.MobileApp.Pages.Base;
 using HackerNews.MobileApp.Services.Browser;
 using HackerNews.MobileApp.Services.HackerNews;

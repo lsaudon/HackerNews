@@ -7,7 +7,7 @@ using HackerNews.MobileApp.Pages;
 using HackerNews.MobileApp.Pages.Base;
 using Xamarin.Forms;
 
-namespace HackerNews.MobileApp.Navigation
+namespace HackerNews.MobileApp.Navigations
 {
     public class NavigationService : INavigationService
     {

@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using HackerNews.MobileApp.Navigation;
+using HackerNews.MobileApp.Navigations;
 using MvvmHelpers;
 
 namespace HackerNews.MobileApp.Pages.Base

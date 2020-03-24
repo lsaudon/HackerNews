@@ -1,5 +1,5 @@
 ﻿using System.Windows.Input;
-using HackerNews.MobileApp.Navigation;
+using HackerNews.MobileApp.Navigations;
 using HackerNews.MobileApp.Pages.Base;
 using MvvmHelpers.Commands;
 
@@ -16,6 +16,6 @@ namespace HackerNews.MobileApp.Pages
         public ICommand GoToTwoViewCommand => new AsyncCommand(NavigationService.PushToAsync<TwoViewModel>);
         public ICommand GoToThreeViewCommand => new AsyncCommand(NavigationService.PushToAsync<ThreeViewModel>);
         public ICommand GoBackViewCommand => new AsyncCommand(NavigationService.PopAsync);
-        public ICommand GoUntilOneViewModelViewCommand => new AsyncCommand(() => NavigationService.PopUntilAsync<OneViewModel>("ça va"));
+        public ICommand GoUntilOneViewModelViewCommand => new AsyncCommand(() => NavigationService.PopUntilAsync<OneViewModel>());
     }
 }

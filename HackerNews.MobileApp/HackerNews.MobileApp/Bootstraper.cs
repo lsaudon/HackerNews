@@ -1,5 +1,5 @@
 ﻿using HackerNews.MobileApp.Common;
-using HackerNews.MobileApp.Navigation;
+using HackerNews.MobileApp.Navigations;
 using HackerNews.MobileApp.Pages;
 using HackerNews.MobileApp.Pages.Stories;
 using HackerNews.MobileApp.Pages.StoryDetail;

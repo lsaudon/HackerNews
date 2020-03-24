@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using HackerNews.MobileApp.Pages.Base;
 
-namespace HackerNews.MobileApp.Navigation
+namespace HackerNews.MobileApp.Navigations
 {
     public interface INavigationService
     {
