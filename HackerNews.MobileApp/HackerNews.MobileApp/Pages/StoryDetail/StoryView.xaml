@@ -1,47 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
-<ContentPage
-    x:Class="HackerNews.MobileApp.Pages.StoryDetail.StoryView"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:mobileApp="clr-namespace:HackerNews.MobileApp;assembly=HackerNews.MobileApp"
-    xmlns:models="clr-namespace:HackerNews.MobileApp.Models;assembly=HackerNews.MobileApp"
-    xmlns:storyDetail="clr-namespace:HackerNews.MobileApp.Pages.StoryDetail;assembly=HackerNews.MobileApp"
-    Title="{Binding Title}"
-    mobileApp:ViewModelLocator.AutoWireViewModel="true"
-    x:DataType="storyDetail:StoryViewModel"
-    BackgroundColor="{StaticResource GreyA}">
+<ContentPage x:Class="HackerNews.MobileApp.Pages.StoryDetail.StoryView"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mobileApp="clr-namespace:HackerNews.MobileApp;assembly=HackerNews.MobileApp"
+             xmlns:models="clr-namespace:HackerNews.MobileApp.Models;assembly=HackerNews.MobileApp"
+             xmlns:storyDetail="clr-namespace:HackerNews.MobileApp.Pages.StoryDetail;assembly=HackerNews.MobileApp"
+             Title="{Binding Title}"
+             x:DataType="storyDetail:StoryViewModel"
+             BackgroundColor="{StaticResource GreyA}"
+             mobileApp:ViewModelLocator.AutoWireViewModel="true">
     <StackLayout>
-        <ActivityIndicator
-            HorizontalOptions="CenterAndExpand"
-            IsRunning="{Binding IsBusy}"
-            IsVisible="{Binding IsBusy}"
-            VerticalOptions="CenterAndExpand" />
-        <Grid
-            HorizontalOptions="FillAndExpand"
-            IsVisible="{Binding IsNotBusy}"
-            VerticalOptions="FillAndExpand">
-            <ListView
-                BackgroundColor="{StaticResource GreyA}"
-                HasUnevenRows="true"
-                ItemsSource="{Binding Comments}"
-                SelectionMode="None">
+        <ActivityIndicator IsVisible="{Binding IsBusy}"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           IsRunning="{Binding IsBusy}" />
+        <Grid IsVisible="{Binding IsNotBusy}"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand">
+            <ListView BackgroundColor="{StaticResource GreyA}"
+                      HasUnevenRows="true"
+                      SelectionMode="None"
+                      ItemsSource="{Binding Comments}">
                 <ListView.Header>
                     <StackLayout Padding="30,30,30,0">
                         <Label Style="{StaticResource ArticleCategory}" Text="{Binding Story.Type, Converter={StaticResource StringToUppercaseConverter}}" />
-                        <Label
-                            LineBreakMode="WordWrap"
-                            Style="{StaticResource DarkH3}"
-                            Text="{Binding Story.Title}" />
+                        <Label Style="{StaticResource DarkH3}"
+                               LineBreakMode="WordWrap"
+                               Text="{Binding Story.Title}" />
                         <Label Style="{StaticResource ArticleDate}" Text="{Binding Story.Time, Converter={StaticResource UnixTimeToDateTimeConverter}, StringFormat='{0:dd MMMM yyyy}'}" />
-                        <Label
-                            IsVisible="{Binding Story.Text, Converter={StaticResource VisibilityConverter}}"
-                            Style="{StaticResource DarkP}"
-                            Text="{Binding Story.Text}" />
-                        <Label
-                            HorizontalTextAlignment="End"
-                            Style="{StaticResource DarkH6}"
-                            Text="{Binding Story.By, StringFormat='by {0}'}" />
+                        <Label IsVisible="{Binding Story.Text, Converter={StaticResource VisibilityConverter}}"
+                               Style="{StaticResource DarkP}"
+                               Text="{Binding Story.Text}" />
+                        <Label Style="{StaticResource DarkH6}"
+                               HorizontalTextAlignment="End"
+                               Text="{Binding Story.By, StringFormat='by {0}'}" />
                         <Label Style="{StaticResource DarkH6}" Text="Comments" />
                     </StackLayout>
                 </ListView.Header>
@@ -53,18 +46,16 @@
                                     <ColumnDefinition Width="2" />
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <StackLayout
-                                    BackgroundColor="{StaticResource Primary}"
-                                    HorizontalOptions="FillAndExpand"
-                                    VerticalOptions="FillAndExpand" />
+                                <StackLayout HorizontalOptions="FillAndExpand"
+                                             VerticalOptions="FillAndExpand"
+                                             BackgroundColor="{StaticResource Primary}" />
                                 <StackLayout Grid.Column="1" Spacing="0">
-                                    <Label
-                                        Margin="22,15,30,0"
-                                        MaxLines="3"
-                                        Style="{StaticResource DarkP}"
-                                        Text="{Binding Text}"
-                                        TextType="Html" />
-                                    <Label Margin="22,0,30,15" Style="{StaticResource DarkH6}">
+                                    <Label Style="{StaticResource DarkP}"
+                                           Margin="22,15,30,0"
+                                           MaxLines="3"
+                                           TextType="Html"
+                                           Text="{Binding Text}" />
+                                    <Label Style="{StaticResource DarkH6}" Margin="22,0,30,15">
                                         <Label.FormattedText>
                                             <FormattedString>
                                                 <Span Text="{Binding Time, Converter={StaticResource UnixTimeToDateTimeConverter}, StringFormat='{0:dd MMMM yyyy}'}" />
@@ -81,13 +72,12 @@
                     <StackLayout HeightRequest="85" />
                 </ListView.Footer>
             </ListView>
-            <Button
-                Margin="30"
-                Command="{Binding GoToUrlCommand}"
-                CommandParameter="{Binding Story.Url}"
-                IsVisible="{Binding Story.Url, Converter={StaticResource VisibilityConverter}}"
-                Text="READ ARTICLE"
-                VerticalOptions="End" />
+            <Button IsVisible="{Binding Story.Url, Converter={StaticResource VisibilityConverter}}"
+                    Margin="30"
+                    VerticalOptions="End"
+                    Command="{Binding GoToUrlCommand}"
+                    CommandParameter="{Binding Story.Url}"
+                    Text="READ ARTICLE" />
         </Grid>
     </StackLayout>
 </ContentPage>

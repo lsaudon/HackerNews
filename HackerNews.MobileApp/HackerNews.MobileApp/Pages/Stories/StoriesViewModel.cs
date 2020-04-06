@@ -42,13 +42,6 @@ namespace HackerNews.MobileApp.Pages.Stories
             set => SetProperty(ref isRefreshing, value);
         }
 
-        private Story selectedStory;
-        public Story SelectedStory
-        {
-            get => selectedStory;
-            set => SetProperty(ref selectedStory, value);
-        }
-
         public ICommand LoadStoriesCommand { get; }
 
         private async Task LoadStoriesExecute()
@@ -94,8 +87,6 @@ namespace HackerNews.MobileApp.Pages.Stories
             if (story == null) return;
 
             await NavigationService.PushToAsync<StoryViewModel>(story.Id);
-
-            SelectedStory = null;
         }
     }
 }

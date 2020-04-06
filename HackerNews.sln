@@ -13,9 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.dependabot\config.yml = .dependabot\config.yml
+		Settings.XamlStyler = Settings.XamlStyler
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNews.MobileApp.Tests", "HackerNews.MobileApp.Tests\HackerNews.MobileApp.Tests.csproj", "{9D335CD1-B29D-49B9-8B6A-E3132AD12CA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNews.MobileApp.Tests", "HackerNews.MobileApp.Tests\HackerNews.MobileApp.Tests.csproj", "{9D335CD1-B29D-49B9-8B6A-E3132AD12CA7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Mobile", "0-Mobile", "{3AEBCA68-701E-4D92-87DB-499A96D90B2B}"
 EndProject

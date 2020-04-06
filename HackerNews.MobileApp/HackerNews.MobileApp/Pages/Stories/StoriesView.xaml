@@ -1,25 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
-<ContentPage
-    x:Class="HackerNews.MobileApp.Pages.Stories.StoriesView"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:mobileApp="clr-namespace:HackerNews.MobileApp;assembly=HackerNews.MobileApp"
-    xmlns:models="clr-namespace:HackerNews.MobileApp.Models;assembly=HackerNews.MobileApp"
-    xmlns:stories="clr-namespace:HackerNews.MobileApp.Pages.Stories;assembly=HackerNews.MobileApp"
-    Title="{Binding Title}"
-    mobileApp:ViewModelLocator.AutoWireViewModel="true"
-    x:DataType="stories:StoriesViewModel"
-    BackgroundColor="{StaticResource GreyA}">
+<ContentPage x:Class="HackerNews.MobileApp.Pages.Stories.StoriesView"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mobileApp="clr-namespace:HackerNews.MobileApp;assembly=HackerNews.MobileApp"
+             xmlns:models="clr-namespace:HackerNews.MobileApp.Models;assembly=HackerNews.MobileApp"
+             xmlns:stories="clr-namespace:HackerNews.MobileApp.Pages.Stories;assembly=HackerNews.MobileApp"
+             Title="{Binding Title}"
+             x:DataType="stories:StoriesViewModel"
+             BackgroundColor="{StaticResource GreyA}"
+             mobileApp:ViewModelLocator.AutoWireViewModel="true">
     <StackLayout>
-        <RefreshView Command="{Binding LoadStoriesCommand}" IsRefreshing="{Binding IsRefreshing}">
-            <CollectionView
-                x:Name="MyCollectionView"
-                ItemsSource="{Binding Stories}"
-                SelectedItem="{Binding SelectedStory}"
-                SelectionChangedCommand="{Binding GoToStoryCommand}"
-                SelectionChangedCommandParameter="{Binding Path=SelectedItem, Source={x:Reference MyCollectionView}}"
-                SelectionMode="Single">
+        <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding LoadStoriesCommand}">
+            <CollectionView x:Name="MyCollectionView"
+                            SelectionMode="Single"
+                            SelectionChangedCommand="{Binding GoToStoryCommand}"
+                            SelectionChangedCommandParameter="{Binding Path=SelectedItem, Source={x:Reference MyCollectionView}}"
+                            ItemsSource="{Binding Stories}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:Story">
                         <Grid Padding="30,15">
@@ -28,32 +25,27 @@
                                 <ColumnDefinition Width="20" />
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <StackLayout
-                                Grid.Column="0"
-                                HeightRequest="56"
-                                HorizontalOptions="CenterAndExpand"
-                                VerticalOptions="CenterAndExpand"
-                                WidthRequest="56">
-                                <Label
-                                    HorizontalOptions="CenterAndExpand"
-                                    Style="{StaticResource ArticleScore}"
-                                    Text="{Binding Score}"
-                                    VerticalOptions="CenterAndExpand" />
-                                <Label
-                                    HorizontalOptions="CenterAndExpand"
-                                    Style="{StaticResource ArticleScore}"
-                                    Text="votes"
-                                    VerticalOptions="CenterAndExpand" />
+                            <StackLayout Grid.Column="0"
+                                         WidthRequest="56"
+                                         HeightRequest="56"
+                                         HorizontalOptions="CenterAndExpand"
+                                         VerticalOptions="CenterAndExpand">
+                                <Label Style="{StaticResource ArticleScore}"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand"
+                                       Text="{Binding Score}" />
+                                <Label Style="{StaticResource ArticleScore}"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand"
+                                       Text="votes" />
                             </StackLayout>
                             <StackLayout Grid.Column="2">
-                                <Label
-                                    Margin="0,0,0,7"
-                                    Style="{StaticResource ArticleCategory}"
-                                    Text="{Binding Type, Converter={StaticResource StringToUppercaseConverter}}" />
-                                <Label
-                                    LineBreakMode="TailTruncation"
-                                    Style="{StaticResource ArticleContent}"
-                                    Text="{Binding Title}" />
+                                <Label Style="{StaticResource ArticleCategory}"
+                                       Margin="0,0,0,7"
+                                       Text="{Binding Type, Converter={StaticResource StringToUppercaseConverter}}" />
+                                <Label Style="{StaticResource ArticleContent}"
+                                       LineBreakMode="TailTruncation"
+                                       Text="{Binding Title}" />
                                 <Label Style="{StaticResource ArticleDate}" Text="{Binding Time, Converter={StaticResource UnixTimeToDateTimeConverter}, StringFormat='{0:dd MMMM yyyy}'}" />
                             </StackLayout>
                         </Grid>
